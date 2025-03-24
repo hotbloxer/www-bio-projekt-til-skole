@@ -1,0 +1,38 @@
+.planner-wrapper {
+    background-color: rgb(203, 239, 239);
+    padding-left: 5%;
+
+
+}
+
+.search-selection {
+    display: flex;
+    gap: 2rem;
+}
+
+.available-movies-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.movie-content {
+    aspect-ratio: 1 / 2;
+    display: grid;
+    grid-template-rows: 8fr 1fr 2fr;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    .available-movies-wrapper {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    
+    }
