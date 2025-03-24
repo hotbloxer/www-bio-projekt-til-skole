@@ -1,0 +1,30 @@
+.page-frame {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.fill-wrapper {
+    background-color: aquamarine;
+    width: 100%;
+}
+
+.hero-wrapper {
+    gap: 2rem;
+    display: flexbox;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1 2;
+
+
+}
+
+
+
+
+
+@media (max-width: 800px){
+    .hero-wrapper {
+    display: flex;
+}
+}
