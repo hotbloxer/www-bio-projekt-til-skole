@@ -19,7 +19,10 @@
 
 }
 
-
+.grid {
+    display: grid;
+    
+}
 
 
 
