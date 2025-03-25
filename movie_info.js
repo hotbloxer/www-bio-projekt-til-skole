@@ -8,12 +8,17 @@ function getMovieInfo() {
     let director = document.getElementById('director');
     let runtime = document.getElementById('runtime');
     let genre = document.getElementById('genre');
+    let description = document.getElementById('description');
+
 
     contentImg.src = selectedMovie["Image"];
+    contentImg.alt = selectedMovie["Original Title"];
+    contentImg.title = selectedMovie["Original Title"];
     title.textContent = selectedMovie["Original Title"];
-    director.textContent = selectedMovie["Directors"];
-    runtime.textContent = selectedMovie["Runtime (mins)"];
-    genre.textContent = selectedMovie["Genres"];
+    director.textContent = 'Instruktør: ' + selectedMovie["Directors"];
+    runtime.textContent = 'Spilletid: ' + selectedMovie["Runtime (mins)"] + ' min';
+    genre.textContent = 'Genre: ' + selectedMovie["Genres"];
+    description.textContent = selectedMovie["Description"];
 }
    
 
