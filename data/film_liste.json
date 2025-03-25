@@ -1,4 +1,5 @@
-[
+{
+  "Movies" : [
   {
     "Position": 1,
     "Const": "tt0920458",
@@ -17,7 +18,8 @@
     "Release Date": "2009-03-06",
     "Directors": "Ole Christian Madsen",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/flammen_og_citronen_small.jpg"
   },
   {
     "Position": 2,
@@ -37,7 +39,8 @@
     "Release Date": "2001-08-10",
     "Directors": "Stefan Fjeldmark, Greg Manwaring, Michael Hegner",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/hjælp_jeg_er_en_fisk_small.jpg"
   },
   {
     "Position": 3,
@@ -57,7 +60,8 @@
     "Release Date": "1968-10-11",
     "Directors": "Erik Balling",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/olsen_banden_small.jpg"
   },
   {
     "Position": 4,
@@ -77,7 +81,8 @@
     "Release Date": "1976-10-01",
     "Directors": "Erik Balling",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/olsen_banden_ser_rødt_small.jpg"
   },
   {
     "Position": 5,
@@ -97,7 +102,9 @@
     "Release Date": "1974-10-04",
     "Directors": "Erik Balling",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/olsen_bandens_sidste_bedrifter_small.jpg"
+
   },
   {
     "Position": 6,
@@ -117,7 +124,9 @@
     "Release Date": "1985-10-04",
     "Directors": "Brita Wielopolska",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/hodja_fra_pjort_small.jpg"
+
   },
   {
     "Position": 7,
@@ -137,7 +146,8 @@
     "Release Date": "1987-12-25",
     "Directors": "Bille August",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/pelle_small.jpg"
   },
   {
     "Position": 8,
@@ -157,7 +167,8 @@
     "Release Date": "1992-10-02",
     "Directors": "Jørgen Vestergaard",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/snøvsen_small.jpg"
   },
   {
     "Position": 9,
@@ -177,7 +188,9 @@
     "Release Date": "2004-02-13",
     "Directors": "Lars von Trier",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/dogville_small.jpg"
+
   },
   {
     "Position": 10,
@@ -197,7 +210,9 @@
     "Release Date": "1996-08-30",
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/pusher_small.jpg"
+
   },
   {
     "Position": 11,
@@ -217,7 +232,8 @@
     "Release Date": "2005-09-16",
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/pusher2_small.jpg"
   },
   {
     "Position": 12,
@@ -237,7 +253,8 @@
     "Release Date": "2006-06-09",
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/pusher3_small.jpg"
   },
   {
     "Position": 13,
@@ -257,7 +274,8 @@
     "Release Date": "2005-04-15",
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/adams_æbler_small.jpg"
   },
   {
     "Position": 14,
@@ -277,7 +295,8 @@
     "Release Date": "2003-03-21",
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/de_grønne_slagtere_small.jpg"
   },
   {
     "Position": 15,
@@ -297,7 +316,8 @@
     "Release Date": "2000-11-03",
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/blinkende_løgter_small.jpg" 
   },
   {
     "Position": 16,
@@ -317,7 +337,8 @@
     "Release Date": "2013-12-06",
     "Directors": "Mikkel Nørgaard",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/klovn_small.jpg"
   },
   {
     "Position": 17,
@@ -337,7 +358,8 @@
     "Release Date": "1999-03-05",
     "Directors": "Thomas Vinterberg",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/festen_small.jpg"
   },
   {
     "Position": 18,
@@ -357,7 +379,8 @@
     "Release Date": "1995-10-13",
     "Directors": "Ole Bornedal",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/nattevagten_small.jpg"
   },
   {
     "Position": 19,
@@ -377,7 +400,8 @@
     "Release Date": "1973-12-14",
     "Directors": "Henning Ørnbak",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/mig_og_mafian_small.jpg"
   },
   {
     "Position": 20,
@@ -397,7 +421,8 @@
     "Release Date": "1972-02-15",
     "Directors": "Kirsten Stenbæk",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/lenin_din_gavtyv_small.jpg"
   },
   {
     "Position": 21,
@@ -417,7 +442,8 @@
     "Release Date": "1961-02-20",
     "Directors": "Poul Bang, Sidney W. Pink",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/reptilicus_small.jpg"
   },
   {
     "Position": 22,
@@ -437,7 +463,8 @@
     "Release Date": "",
     "Directors": "Peter Elfelt",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/kørsel_med_grønlandske_hunde_small.jpg"
   },
   {
     "Position": 23,
@@ -457,7 +484,8 @@
     "Release Date": "1958-04-07",
     "Directors": "Annelise Hovmand",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/krudt_og_klunker_small.jpg"
   },
   {
     "Position": 24,
@@ -477,7 +505,8 @@
     "Release Date": "1910-09-12",
     "Directors": "Urban Gad",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/afgrunden_small.jpg"
   },
   {
     "Position": 25,
@@ -497,6 +526,8 @@
     "Release Date": "1986-10-10",
     "Directors": "Peter Madsen, Jeffrey J. Varab",
     "Your Rating": "",
-    "Date Rated": ""
+    "Date Rated": "",
+    "Image": "images/valhalla_small.jpg"
   }
 ]
+}
