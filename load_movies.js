@@ -1,5 +1,7 @@
 loadMovies();
 
+let selectedMovie;
+
 async function loadMovies() {
     const response = await fetch("data/film_liste.json");
     const obj = await response.json();
@@ -14,6 +16,10 @@ async function loadMovies() {
         
         movieContent.className = "movie-content";
         button.textContent = "Køb billet";
+        button.onclick = () => {
+            selectedMovie = movie;
+            console.log(selectedMovie);
+        } 
         image.src = movie["Image"];
         title.textContent = movie["Original Title"];
 
@@ -21,17 +27,5 @@ async function loadMovies() {
         movieContent.appendChild(title);
         movieContent.appendChild(button);
         movieGrid.appendChild(movieContent);
-
-        // let fig = document.createElement('figure');
-        // let img = document.createElement('img');
-        // let figcaption = document.createElement('figcaption');
-
-        // figcaption.textContent = movie["Original Title"];
-        // img.src = movie["Image"];
-
-        // fig.appendChild(img);
-        // fig.appendChild(figcaption);
-        // e.appendChild(fig);
-        // movieGrid.appendChild(e);
     });
 }
