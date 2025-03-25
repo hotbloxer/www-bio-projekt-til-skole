@@ -16,11 +16,16 @@ async function loadMovies() {
         
         movieContent.className = "movie-content";
         button.textContent = "Køb billet";
+
         button.onclick = () => {
-            selectedMovie = movie;
-            console.log(selectedMovie);
+            sessionStorage.setItem("SelectedMovie", JSON.stringify(movie));
+            window.location = "movieinfo.html";
         } 
+
         image.src = movie["Image"];
+        image.alt = movie["Original Title"];
+        image.title = movie["Original Title"];
+
         title.textContent = movie["Original Title"];
 
         movieContent.appendChild(image);
