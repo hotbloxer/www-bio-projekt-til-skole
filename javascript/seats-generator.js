@@ -1,25 +1,47 @@
-function fillGrid  (id, rows, colums) {
-    console.log(2);
+function fillGrid  (id, columns, rows) {
+
     var idTag = document.getElementById(id)
     var constructElement = `
     <div 
     style="display: grid; 
-    grid-template-columns: repeat(${colums}, 1fr); 
-    grid-template-rows: repeat(${rows}, 1fr); ">
+    grid-template-columns: repeat(${rows}, 1fr); 
+    grid-template-rows: repeat(${columns}, 1fr); ">
     `;
 
     for (let r = 0; r<rows; r++) {
         
-        for (let c = 0; c < colums; c++) {
+        for (let c = 0; c < columns; c++) {
             constructElement += constructSeat(0, r, c);
             
         }
     }
 
     constructElement += "</div>";
-
-    console.log(constructElement);
     idTag.innerHTML = constructElement;
+}
+
+function constructCinemaSal() {
+ 
+    fetchData("sal4");
+
+}
+
+
+function fetchData (sal) {
+    fetch("data/sal_data.json")
+    .then(res => res.json())
+    .then(data =>  {
+        console.log("sal " + sal);
+    
+        let val = Object.values(data.find(item => item[sal]));
+        console.dir("dolum " + val[0].columns);
+        console.dir("rows " + val[0].rows);
+        fillGrid("seats", val[0].columns, val[0].rows);
+
+    })
+    .catch(e => {
+        console.log(e);
+    })
 }
 
 //status 0 free, 1 selected, 2 reserved
@@ -72,3 +94,6 @@ function rowClicked (id) {
     //change.innerHTML = `<div class = "seat seat-reserved"> d</div>`;
 
 }
+
+
+
