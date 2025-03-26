@@ -31,8 +31,6 @@ async function getMovieSchedule() {
     let schedule = obj.Movies.find(movie => movie["Title"] == selectedMovie["Original Title"]);
     let showings = schedule.Program;
 
-    showings.forEach(showing => console.log(showing["Day"]));
-
     var currentDate = new Date(),
     d = currentDate.getDate(),
     m = currentDate.getMonth(),
@@ -42,16 +40,35 @@ async function getMovieSchedule() {
 
     for (let i = 0; i < 7; i++) {
         var date = new Date(y, m, d + i);
-        console.log(date);
         dates[i] = date;
     }
 
- 
     dates.forEach( date => {
-        let times = showings.filter(showing => showing["Day"] == date.getDate());
-        console.log(times);
+        let showingsOnDate = showings.filter(showing => showing["Day"] == date.getDate());
+        let prog = document.getElementById('program');
+    
+        let dateBox = document.createElement('div');
+        let dateDisplay = document.createElement('p');
+        dateDisplay.textContent = date.getDate() + " " + date.getMonth();
+        dateBox.appendChild(dateDisplay);
+        
+        showingsOnDate.forEach(showing => {
+            let showingBox =document.createElement('div');
+            let hall = document.createElement('p');
+            let time = document.createElement('p');
+            hall.textContent = showing["Hall"];
+            time.textContent = showing["Time"];
 
+            showingBox.appendChild(hall);
+            showingBox.appendChild(time);
+            dateBox.appendChild(showingBox);
+        })
+
+
+        prog.appendChild(dateBox);
     })
+
+    dates.forEach(date => console.log(date.showings));
 
    
 
