@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Filmhistorie, i danmarks klasse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/defaultstyle.css">
+        <link rel="stylesheet" href="styles/sticky-checkout.css">
+        <link rel="stylesheet" href="styles/buy-tickets.css">
+
+        <script src="javascript/seats-generator.js"></script>
+    </head>
+    <body class = "page-frame ">  
+        <header>
+            <h1 class = header-h1>Filmhistorie i verdensklasse</h1>
+        </header>
+      
+        <main>
+            <div>
+                summary of movie
+            </div>
+
+            <div class = "info-wrapper">
+                <div>
+                    
+                    <h1>billet valg</h1>
+                    
+                    <div class = ticket-wrapper>
+                        <div class = ticket-display-template>
+                            <div>
+                                <p>standard billet</p>
+                                <p>pris 115dkk </p>
+                            </div>
+                            
+                            <button class = "subtract-button square justify-content-center">
+                                    <p class = "remove-margin">-</p> 
+                            </button>
+                            <div class = "center">
+                                <p >0</p>
+                            </div>
+                            
+                            <button class = "add-button square justify-content-center"> 
+                                <p  class = "remove-margin">+</p> 
+                            </button>
+                        </div>
+    
+                        <div class = ticket-display-template>
+                            <div>
+                                <p>standard billet</p>
+                                <p>pris 115dkk </p>
+                            </div>
+                            
+                            <button class = "subtract-button square justify-content-center">
+                                    <p class = "remove-margin">-</p> 
+                            </button>
+                            <div class = "center">
+                                <p >0</p>
+                            </div>
+                            
+                            <button class = "add-button square justify-content-center"> 
+                                <p  class = "remove-margin">+</p> 
+                            </button>
+                        </div>
+    
+    
+                        <div class = ticket-display-template>
+                            <div>
+                                <p>standard billet</p>
+                                <p>pris 115dkk </p>
+                            </div>
+                            
+                            <button class = "subtract-button square justify-content-center">
+                                    <p class = "remove-margin">-</p> 
+                            </button>
+                            <div class = "center">
+                                <p >0</p>
+                            </div>
+                            
+                            <button class = "add-button square justify-content-center"> 
+                                <p  class = "remove-margin">+</p> 
+                            </button>
+                        </div>
+    
+                    </div>
+                    
+             
+                </div>
+                <div class="sal-container ">
+                    <div class="center">
+                        <div class="screen">
+                        </div>
+
+                    </div>
+                    <divid id = "seats">
+                        <div  style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(5, 1fr); ">
+
+                            <div class = seat> d</div> 
+                            <div class = seat>d</div><div class = seat>d</div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div>
+    
+                        </div>
+                    </div>
+
+                    sæde valg
+                </div>
+            </div>
+
+            <div class = "split-left-oriented">
+                <p>biletter</p>
+                <p>antal købt: 0</p>
+                <p>samlet pris: 0</p>
+                <button>gå videre</button>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <h3> Filmhistorie i Danmarks klasse</h3>
+            <div class = "footer-grid">
+                <div>om os</div>
+                <div>kontakt</div>
+                <div>søg i film katalog</div>
+
+
+            </div>
+        </footer>
+        <script >
+            fillGrid("seats", 20, 10);
+        </script>
+    </body>
+</html>
