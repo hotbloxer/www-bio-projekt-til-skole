@@ -3,240 +3,375 @@
         { 
             "Title": "Flammen & Citronen",
             "Program": [
+                {"Hall": "2",
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
                 {"Hall": "5",
-                "Date": "12/06",
-                "Time": "13:30"}
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Hjælp! Jeg er en fisk",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Olsen-banden",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Olsen-banden ser rødt",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Olsen-bandens sidste bedrifter",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Hodja fra Pjort",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Pelle erobreren",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Snøvsen",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Dogville",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Pusher",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Pusher II",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Pusher III",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Adams æbler",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Blinkende lygter",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Klovn: The Movie",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Festen",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Nattevagten",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Lenin, din gavtyv!",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Reptilicus",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Kørsel med grønlandske hunde",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Afgrunden",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         },
         { 
             "Title": "Valhalla",
             "Program": [
                 {"Hall": "2",
-                "Date": "17/06",
-                "Time": "13:30"},
-                {"Hall": "3",
-                "Date": "18/06",
-                "Time": "13:30"}
+                "Time": "13:30",
+                "Day": "27",
+                "Month": "3"},
+                {"Hall": "2",
+                "Time": "14:30",
+                "Day": "28",
+                "Month": "3"},
+                {"Hall": "5",
+                "Time": "18:30",
+                "Day": "28",
+                "Month": "3"}
             ]
         }
         

@@ -29,7 +29,33 @@ async function getMovieSchedule() {
 
     const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
     let schedule = obj.Movies.find(movie => movie["Title"] == selectedMovie["Original Title"]);
-    console.log(schedule);
+    let showings = schedule.Program;
+
+    showings.forEach(showing => console.log(showing["Day"]));
+
+    var currentDate = new Date(),
+    d = currentDate.getDate(),
+    m = currentDate.getMonth(),
+    y = currentDate.getFullYear();
+
+    let dates = [];
+
+    for (let i = 0; i < 7; i++) {
+        var date = new Date(y, m, d + i);
+        console.log(date);
+        dates[i] = date;
+    }
+
+ 
+    dates.forEach( date => {
+        let times = showings.filter(showing => showing["Day"] == date.getDate());
+        console.log(times);
+
+    })
+
+   
+
+
 }
    
 
