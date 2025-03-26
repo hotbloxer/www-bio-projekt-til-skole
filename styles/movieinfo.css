@@ -1,9 +1,4 @@
-.info-wrapper {
-    gap: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-   width: 100%;
-}
+
 
 .info-content-wrapper {
     display: grid;

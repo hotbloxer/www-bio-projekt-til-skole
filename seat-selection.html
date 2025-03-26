@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="styles/defaultstyle.css">
         <link rel="stylesheet" href="styles/sticky-checkout.css">
         <link rel="stylesheet" href="styles/buy-tickets.css">
+
+        <script src="javascript/seats-generator.js"></script>
     </head>
     <body class = "page-frame ">  
         <header>
@@ -83,11 +85,19 @@
                     
              
                 </div>
-                <div class="seats-container ">
+                <div class="sal-container ">
                     <div class="center">
-                                            <div class="screen">
-                       
+                        <div class="screen">
+                        </div>
+
                     </div>
+                    <divid id = "seats">
+                        <div  style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(5, 1fr); ">
+
+                            <div class = seat> d</div> 
+                            <div class = seat>d</div><div class = seat>d</div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div><div class = seat></div>
+    
+                        </div>
                     </div>
 
                     sæde valg
@@ -114,6 +124,8 @@
 
             </div>
         </footer>
-
+        <script >
+            fillGrid("seats", 20, 10);
+        </script>
     </body>
 </html>
