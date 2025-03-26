@@ -56,7 +56,10 @@
     height: 1rem;
     width: 30%;
     margin-top: 2rem;
+    margin-bottom: 4rem;
 }
+
+
 
 .seats-container {
     margin: 2rem;
@@ -77,3 +80,12 @@
 .seat-reserved {
     background-color: rgb(255, 196, 196);
 }
+
+.seat-selected {
+    background-color: rgb(255, 196, 196);
+}
+
+.flex-line {
+    display: flex;
+}
+

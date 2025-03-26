@@ -1,0 +1,7 @@
+{
+    "sal1": {"rows": 1, "columns": 1},
+    "sal2": {"rows": 2, "columns": 2},
+    "sal3": {"rows": 3, "columns": 3},
+    "sal4": {"rows": 4, "columns": 4},
+    "sal5": {"rows": 5, "columns": 5}
+}
