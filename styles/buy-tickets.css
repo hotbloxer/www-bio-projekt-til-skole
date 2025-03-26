@@ -1,0 +1,59 @@
+.ticket-display-template {
+    display: grid;
+
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    background-color: rgb(177, 207, 233);
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+.square {
+    width: 3em;
+    height: 3em;
+    justify-items: center;
+
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.add-button {
+    background-color: aqua;
+}
+
+.subtract-button {
+    background-color: rgb(22, 82, 82);
+}
+
+.remove-margin {
+    margin: 0;
+}
+
+.center {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.ticket-wrapper {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.seats-container {
+    background-color: aquamarine;
+    width: 100%;
+    
+}
+
+.screen {
+    background-color: black;
+    height: 1rem;
+    width: 30%;
+    margin-top: 2rem;
+}
