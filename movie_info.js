@@ -1,9 +1,9 @@
 
-getMovieInfo();
-getMovieSchedule();
+const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
+getMovieInfo(selectedMovie);
+getMovieSchedule(selectedMovie);
 
-function getMovieInfo() {
-    const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
+function getMovieInfo(selectedMovie) {
     let contentImg = document.getElementById('content-img');
     let title = document.getElementById('movie-title');
     let director = document.getElementById('director');
@@ -22,11 +22,10 @@ function getMovieInfo() {
     description.textContent = selectedMovie["Description"];
 }
 
-async function getMovieSchedule() {
+async function getMovieSchedule(selectedMovie) {
     const response = await fetch('Data/spille_tider.json');
     const obj = await response.json();
-    const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
-    
+
     let schedule = obj.Movies.find(movie => movie["Title"] == selectedMovie["Original Title"]);
     let showings = schedule.Program;
     let dates = getDates();
@@ -73,7 +72,7 @@ function getDates() {
     let y = currentDate.getFullYear();
 
     for (let i = 0; i < 7; i++) {
-        let date = new Date(y, m, d + i);
+        let date = new Date(y, m + 1, d + i);
         dates[i] = date;
     }
 

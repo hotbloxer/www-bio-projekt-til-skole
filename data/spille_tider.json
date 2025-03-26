@@ -3,413 +3,286 @@
         { 
             "Title": "Flammen & Citronen",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "21:00",
-                "Day": "29",
-                "Month": "3"},
-                {"Hall": "1",
-                "Time": "12:00",
-                "Day": "1",
-                "Month": "4"},
-                {"Hall": "1",
-                "Time": "15:00",
-                "Day": "1",
-                "Month": "4"},
-                {"Hall": "1",
-                "Time": "18:00",
-                "Day": "1",
-                "Month": "4"},
-                {"Hall": "1",
-                "Time": "12:00",
-                "Day": "1",
-                "Month": "4"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Hjælp! Jeg er en fisk",
             "Program": [
-                {"Hall": "1",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "1",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "1",
-                "Time": "15:00",
-                "Day": "29",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "18:00",
-                "Day": "29",
-                "Month": "3"},
-                {"Hall": "4",
-                "Time": "12:00",
-                "Day": "30",
-                "Month": "3"}
-                
+                {"Hall": "1", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "1", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "2", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "1", "Time": "15:00", "Day": "29", "Month": "3"},
+                {"Hall": "2", "Time": "18:00", "Day": "29", "Month": "3"},
+                {"Hall": "4", "Time": "12:00", "Day": "30", "Month": "3"}               
             ]
         },
         { 
             "Title": "Olsen-banden",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Olsen-banden ser rødt",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Olsen-bandens sidste bedrifter",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Hodja fra Pjort",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Pelle erobreren",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Snøvsen",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Dogville",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Pusher",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Pusher II",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Pusher III",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Adams æbler",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Blinkende lygter",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Klovn: The Movie",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Festen",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Nattevagten",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Lenin, din gavtyv!",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Reptilicus",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Kørsel med grønlandske hunde",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Afgrunden",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         },
         { 
             "Title": "Valhalla",
             "Program": [
-                {"Hall": "2",
-                "Time": "13:30",
-                "Day": "27",
-                "Month": "3"},
-                {"Hall": "2",
-                "Time": "14:30",
-                "Day": "28",
-                "Month": "3"},
-                {"Hall": "5",
-                "Time": "18:30",
-                "Day": "28",
-                "Month": "3"}
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
             ]
         }
-        
-        
     ]
-
-
 }
