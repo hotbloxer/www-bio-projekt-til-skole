@@ -1,5 +1,6 @@
 
 getMovieInfo();
+getMovieSchedule();
 
 function getMovieInfo() {
     const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
@@ -19,6 +20,16 @@ function getMovieInfo() {
     runtime.textContent = 'Spilletid: ' + selectedMovie["Runtime (mins)"] + ' min';
     genre.textContent = 'Genre: ' + selectedMovie["Genres"];
     description.textContent = selectedMovie["Description"];
+
+}
+
+async function getMovieSchedule() {
+    const response = await fetch('Data/spille_tider.json');
+    const obj = await response.json();
+
+    const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
+    let schedule = obj.Movies.find(movie => movie["Title"] == selectedMovie["Original Title"]);
+    console.log(schedule);
 }
    
 
