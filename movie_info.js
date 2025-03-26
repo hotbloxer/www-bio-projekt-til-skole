@@ -20,61 +20,65 @@ function getMovieInfo() {
     runtime.textContent = 'Spilletid: ' + selectedMovie["Runtime (mins)"] + ' min';
     genre.textContent = 'Genre: ' + selectedMovie["Genres"];
     description.textContent = selectedMovie["Description"];
-
 }
 
 async function getMovieSchedule() {
     const response = await fetch('Data/spille_tider.json');
     const obj = await response.json();
-
     const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
+    
     let schedule = obj.Movies.find(movie => movie["Title"] == selectedMovie["Original Title"]);
     let showings = schedule.Program;
+    let dates = getDates();
 
-    var currentDate = new Date(),
-    d = currentDate.getDate(),
-    m = currentDate.getMonth(),
-    y = currentDate.getFullYear();
-
-    let dates = [];
-
-    for (let i = 0; i < 7; i++) {
-        var date = new Date(y, m, d + i);
-        dates[i] = date;
-    }
-
-    dates.forEach( date => {
-        let showingsOnDate = showings.filter(showing => showing["Day"] == date.getDate());
+    dates.forEach(date => {
+        let showingsOnDate = showings.filter(showing => showing["Day"] == date.getDate());  
         let prog = document.getElementById('program');
-    
         let dateBox = document.createElement('div');
         let dateDisplay = document.createElement('p');
-        dateDisplay.textContent = date.getDate() + " " + date.getMonth();
+        
+        dateDisplay.textContent = date.getDate() + "/" + date.getMonth();
         dateBox.appendChild(dateDisplay);
         
         showingsOnDate.forEach(showing => {
             let showingBox =document.createElement('div');
             let hall = document.createElement('p');
             let time = document.createElement('p');
-            hall.textContent = showing["Hall"];
+            let button = document.createElement('button');
+
+            hall.textContent = "Sal " + showing["Hall"];
             time.textContent = showing["Time"];
+            button.textContent = "Køb billetter";
+
+            button.onclick = () => {
+                sessionStorage.setItem("SelectedShowing", JSON.stringify(showing));
+                console.log(JSON.parse(sessionStorage.getItem("SelectedShowing")));
+            }
 
             showingBox.appendChild(hall);
             showingBox.appendChild(time);
+            showingBox.appendChild(button);
             dateBox.appendChild(showingBox);
-        })
-
+        });
 
         prog.appendChild(dateBox);
     })
-
-    dates.forEach(date => console.log(date.showings));
-
-   
-
-
 }
-   
+
+function getDates() {
+    let dates = [];
+    let currentDate = new Date();
+    let d = currentDate.getDate();
+    let m = currentDate.getMonth();
+    let y = currentDate.getFullYear();
+
+    for (let i = 0; i < 7; i++) {
+        let date = new Date(y, m, d + i);
+        dates[i] = date;
+    }
+
+    return dates;
+}
 
 
 
