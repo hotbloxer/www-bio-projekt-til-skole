@@ -1,3 +1,4 @@
+
 loadMovies();
 
 async function loadMovies() {
@@ -20,7 +21,7 @@ async function loadMovies() {
 
         title.textContent = movie["Original Title"];
         
-        button.textContent = "Køb billet";
+        button.textContent = "Vælg film";
         button.onclick = () => {
             sessionStorage.setItem("SelectedMovie", JSON.stringify(movie));
             window.location = "movieinfo.html";

@@ -10,7 +10,18 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "2", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "2", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "2", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "2", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "2", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"}
             ]
         },
         { 
@@ -21,20 +32,38 @@
                 {"Hall": "2", "Time": "18:30", "Day": "28", "Month": "3"},
                 {"Hall": "1", "Time": "15:00", "Day": "29", "Month": "3"},
                 {"Hall": "2", "Time": "18:00", "Day": "29", "Month": "3"},
-                {"Hall": "4", "Time": "12:00", "Day": "30", "Month": "3"}               
+                {"Hall": "4", "Time": "12:00", "Day": "30", "Month": "3"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "2", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "2", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"}            
             ]
         },
         { 
             "Title": "Olsen-banden",
             "Program": [
-                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
-                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
-                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
-                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "1", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "2", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "1", "Time": "15:00", "Day": "29", "Month": "3"},
+                {"Hall": "2", "Time": "18:00", "Day": "29", "Month": "3"},
+                {"Hall": "4", "Time": "12:00", "Day": "30", "Month": "3"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "2", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "2", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "2", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"}  
             ]
         },
         { 
@@ -247,6 +276,19 @@
         },
         { 
             "Title": "Kørsel med grønlandske hunde",
+            "Program": [
+                {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
+                {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "18:30", "Day": "28", "Month": "3"},
+                {"Hall": "5", "Time": "21:00", "Day": "29", "Month": "3"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+            ]
+        },
+        { 
+            "Title": "Krudt og klunker",
             "Program": [
                 {"Hall": "2", "Time": "13:30", "Day": "27", "Month": "3"},
                 {"Hall": "2", "Time": "14:30", "Day": "28", "Month": "3"},
