@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles/sticky-checkout.css">
         <link rel="stylesheet" href="styles/buy-tickets.css">
 
-        <script src="javascript/seats-generator.js"></script>
+        <script src="javascript/seat_selection.js"></script>
     </head>
     <body class = "page-frame ">  
         <header>
@@ -43,7 +43,7 @@
                     
                     <h1>billet valg</h1>
                     
-                    <div class = ticket-wrapper>
+                    <div id = "ticket-display" class = ticket-wrapper>
                         <div class = ticket-display-template>
                             <div>
                                 <p>standard billet</p>
@@ -138,7 +138,8 @@
             </div>
         </footer>
         <script >
-            fillGrid("seats", 30, 11);
+            constructCinemaSal();
+            makeTickets();
         </script>
     </body>
 </html>
