@@ -1,0 +1,15 @@
+.checkout-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.split-left-oriented {
+    background-color: beige;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr;
+
+}
