@@ -53,6 +53,7 @@ async function getMovieSchedule(selectedMovie) {
             button.onclick = () => {
                 sessionStorage.setItem("SelectedShowing", JSON.stringify(showing));
                 console.log(JSON.parse(sessionStorage.getItem("SelectedShowing")));
+                window.location = 'seat-selection.html';
             }
 
             showingBox.appendChild(hall);
