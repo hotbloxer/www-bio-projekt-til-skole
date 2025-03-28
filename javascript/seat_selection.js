@@ -1,3 +1,26 @@
+
+// indeledende funktion kaldt fra hjemmeside
+function constructCinemaSal() {
+     fetchData("sal4");
+}
+
+// fetch data opretter også hele salen
+// oprettelsen blev nødt til at sket i .then (data) delen, for at undgå asuny mareridt
+function fetchData (sal) {
+    fetch("data/sal_data.json")
+    .then(res => res.json())
+    .then(data =>  {
+
+        let val = Object.values(data.find(item => item[sal]));
+        fillGrid("seats", val[0].columns, val[0].rows);
+
+    })
+    .catch(e => {
+        console.log(e);
+    })
+}
+
+// denne udfylder alle sæderne i biografen
 function fillGrid  (id, columns, rows) {
 
     var idTag = document.getElementById(id)
@@ -8,11 +31,21 @@ function fillGrid  (id, columns, rows) {
     grid-template-rows: repeat(${columns}, 1fr); ">
     `;
 
+    let seatsSelected = getListOfReservedSeats();
+
     for (let r = 0; r<rows; r++) {
         
         for (let c = 0; c < columns; c++) {
-            constructElement += constructSeat(0, r, c);
+
+            let isThisSeatSelected = 0;
+            console.log(seatsSelected);
+
             
+            if (isEntryInList(seatsSelected, r,c)) {
+                isThisSeatSelected = 1
+            }
+
+            constructElement += constructSeat(isThisSeatSelected, r, c);
         }
     }
 
@@ -20,61 +53,38 @@ function fillGrid  (id, columns, rows) {
     idTag.innerHTML = constructElement;
 }
 
-function constructCinemaSal() {
- 
-    fetchData("sal4");
 
-}
-
-
-function fetchData (sal) {
-    fetch("data/sal_data.json")
-    .then(res => res.json())
-    .then(data =>  {
-        console.log("sal " + sal);
-    
-        let val = Object.values(data.find(item => item[sal]));
-        console.dir("dolum " + val[0].columns);
-        console.dir("rows " + val[0].rows);
-        fillGrid("seats", val[0].columns, val[0].rows);
-
-    })
-    .catch(e => {
-        console.log(e);
-    })
-}
-
+// denne opretter det specifikke sæde i salen
 //status 0 free, 1 selected, 2 reserved
 function constructSeat (status, r,c) {
     let id = "r" + r + "c" + c;
     if (status == 0) {
         return `
-        <button onclick = "rowClicked(${id})" id = ${id} class = "seat seat-free"> d</button>
+        <button onclick = "seatClicked(${id})" id = ${id} class = "seat seat-free"> d</button>
         `   
     }
 
     if (status == 1) {
         return `
-        <button onclick = "rowClicked(${id})" id = ${id} class = "seat seat-selected"> d</button>
+        <button onclick = "seatClicked(${id})" id = ${id} class = "seat seat-selected"> d</button>
         `  
     }
-
     return `<div class = "seat seat-reserved"> d</div>`
 }
 
-function setAvailability (free) {
-    
-}
 
-function rowClicked (id) {
 
-    console.log( id.id);
+// registre hvilket sæde der er blevet valgt
+function seatClicked (id) {
 
     let change = document.getElementById(id.id);
 
     var rNumber = "";
     var cNumber = "";
 
+
+    // seperer tallene fra id.
+    // fx c2r5 bliver c = 2, og r = 5
     for (let char of id.id) {
         if (char === 'c') {
             foundC = true;
@@ -89,16 +99,68 @@ function rowClicked (id) {
         }
     }
 
-
-    change.outerHTML = constructSeat(1, rNumber,cNumber);
-    //change.innerHTML = `<div class = "seat seat-reserved"> d</div>`;
-
+    if (seatCanBeSelected(rNumber, cNumber)) {
+        setReserveSeat(rNumber, cNumber)
+        change.outerHTML = constructSeat(1, rNumber,cNumber);
+    }
 }
 
 
 
+// denne funktion tjekker der er valgt for mange pladser i forhold til bestilte billetter 
+function seatCanBeSelected (r, c) {
+    let totalTickets = calcualteTotalSum().tickets;
+    let seatsSelected = getListOfReservedSeats();
+
+    if (seatsSelected.length < 1) {
+        return true;
+    }
+
+    // check om entry allerede eksistere i liste
+    if (isEntryInList(seatsSelected, r, c)) {
+        return false;
+    }
+   
+    // check om der er valgt nok billetter
+    if (totalTickets > seatsSelected.length) {
+        return true;
+    }
+
+    return false;
+}
+
+function isEntryInList (seatsSelected, r,c) {
+    for (let i = 0; i < seatsSelected.length; i++) {
+        if (seatsSelected[i].row == r && seatsSelected[i].column == c) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
+function setReserveSeat (r, c) {
+    let newReservedSeat = {"row": r, "column": c}
+    let oldReservedList = getListOfReservedSeats();
+
+    oldReservedList.push(newReservedSeat);
+
+    sessionStorage.setItem("reservedseats", JSON.stringify(oldReservedList) )
+}
+
+
+
+function getListOfReservedSeats () {
+    let reservedSeats = JSON.parse(sessionStorage.getItem("reservedseats"));
+    console.log(reservedSeats);
+    if (reservedSeats != null) {
+        return reservedSeats;
+    }
+    return [];
+}
+
+
+// constructs tickets display from the JSON "tickets_data.json"
 function makeTickets () {
 
     let ticketDisplay = document.getElementById("ticket-display");
@@ -110,29 +172,87 @@ function makeTickets () {
     .then(res => res.json())
     .then(data => {
         
+        var ticketSessionData =  [];
+
         for (let i = 0; i < data.tickets.length; i++) {  
 
-            let amountOfTickets = getAmountOfTicketsOrdered(i);
+            // get key for current data
+            let ticketKey = Object.keys(data.tickets[i]);
 
+            // get value from current data
             let ticket = Object.values(data.tickets[i])[0];
+
+            //check for data i session for tickets
+            let amountOfTickets = getAmountOfTicketsOrdered(ticketKey);
+
+            // beregn pris med discount
+            let price = (standardPris - (ticket.discount / 100 * standardPris));
+
+            
+            // push ticket information til session ticket dataArray
+            let collectInfo = {"name": ticketKey[0], "amount": amountOfTickets, "price": price };
+
+            // saml infromationer om biletter til sessiondata
+            ticketSessionData.push( collectInfo);       
+            
             ticketDisplayConstructor += constructTicket(
                 ticket.title,
-                 (standardPris - (ticket.discount / 100 * standardPris))
-                 , ticket.beskrivelse,
-                i,
+                price,
+                ticket.beskrivelse,
+                ticketKey[0],
                 amountOfTickets);
-
         }
+
+        setSessionTicketData(ticketSessionData);
+
         ticketDisplay.innerHTML = ticketDisplayConstructor;
+
+        UpdateCheckout() 
     })
     .catch(e => {
         console.log(e);
     })
-
-   
-
-
 }
+
+
+function UpdateCheckout () {
+
+    let sumAndTickets = calcualteTotalSum ();
+
+    let sum = document.getElementById("totalSum");
+    let ticketsBought = document.getElementById("ticketsBought");
+
+    sum.outerHTML = `<p id = totalSum>samlet pris: ${sumAndTickets.sum}</p>`
+    ticketsBought.outerHTML = `<p id = ticketsBought>antal billetter: ${sumAndTickets.tickets}</p>`
+}
+
+
+// sætter dataen for valgte biletter i sessionStorage
+function setSessionTicketData(data) {
+    sessionStorage.setItem("sessionTickets", JSON.stringify(data));
+}
+
+
+// opdatere antallet af bestilte biletter
+function changeTicketSessionData (id, newStatus) {
+    let oldValue = getSessionticketData();
+  
+
+    for (let i = 0; i< oldValue.length; i++) {
+        if (oldValue[i].name == id) {
+            oldValue[i].amount = newStatus;
+        }
+    }
+
+    setSessionTicketData(oldValue);
+ 
+} 
+
+function getSessionticketData () {
+    return JSON.parse(sessionStorage.getItem("sessionTickets"));
+}
+
+
 
 function constructTicket (title, pris, beskrivelse, id, amount) {
     return `                        
@@ -156,33 +276,38 @@ function constructTicket (title, pris, beskrivelse, id, amount) {
     `
 }
 
-function ticketAdded (idNumber) {
-    let ticketsOrdered = getAmountOfTicketsOrdered(idNumber);
-    ticketsOrdered ++;
-    changeTicketSessionData(idNumber, ticketsOrdered);
-    redrawAmountOrdered(idNumber, ticketsOrdered);
-}
 
-function ticketRemoved (idNumber) {
-    let ticketsOrdered = getAmountOfTicketsOrdered(idNumber);
-    if (ticketsOrdered > 0) {
-        ticketsOrdered --;
-        changeTicketSessionData(idNumber, ticketsOrdered);
-        redrawAmountOrdered(idNumber, ticketsOrdered);
+
+function addOrRemoveTicket (id, adding) {
+    let ticketsOrdered = getAmountOfTicketsOrdered(id);
+    console.log (ticketsOrdered);
+    if (adding) {
+        ticketsOrdered ++;
+    }
+    else {
+        if (ticketsOrdered > 0) {
+            ticketsOrdered --;
+        }
+        else {
+            return;
+        }
     }
 
+    changeTicketSessionData(id, ticketsOrdered);
+    redrawAmountOrdered(id, ticketsOrdered);
+
+    UpdateCheckout();
 }
+
 
 function redrawAmountOrdered (id, newAmount) {
 
     let amountOverride = document.getElementById("amount" + id);
     amountOverride.outerHTML = `<p id = amount${id}>${newAmount}</p>`;
     
-
 }
 
 function ticketClicked (id) {
-
     let command = "";
     let idNumber = "";
 
@@ -196,35 +321,54 @@ function ticketClicked (id) {
     }
 
     if (command == "add") {
-        ticketAdded(idNumber);
+        addOrRemoveTicket(idNumber, true);
     }
 
     else {
-        ticketRemoved(idNumber);
+        addOrRemoveTicket(idNumber, false);
     }
-
 }
 
 
-
 function getAmountOfTicketsOrdered (idNumber) {
-    let ticketDataFromSessionData = sessionStorage.getItem(idNumber);
-    
 
-
+    let ticketDataFromSessionData = getSessionticketData();
 
     if (ticketDataFromSessionData != null) {
-        
+
+        for (let i = 0; i < ticketDataFromSessionData.length; i++) {
+
+            if (ticketDataFromSessionData[i].name == idNumber)
+            {
+                return ticketDataFromSessionData[i].amount;  
+            }
+        }
         return ticketDataFromSessionData;
         
     }
     else {
+
         return 0;
     }
-
-    
 }
 
-function changeTicketSessionData (id, newStatus) {
-    sessionStorage.setItem (id, newStatus);
-} 
+
+function calcualteTotalSum () {
+    let sessionTicketData = getSessionticketData();
+    let sum = 0;
+    let tickets = 0;
+    if (sessionTicketData == null) {
+        return {"sum": sum, "tickets": tickets};
+    }
+
+    for (let i = 0; i< sessionTicketData.length; i++) {
+        let currentTickets = sessionTicketData[i];
+
+        sum += currentTickets.price * currentTickets.amount;
+        tickets += currentTickets.amount;
+
+    }
+    return {"sum": sum, "tickets": tickets};
+}
+
+
