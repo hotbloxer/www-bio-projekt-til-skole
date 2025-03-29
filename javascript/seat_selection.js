@@ -31,17 +31,16 @@ function fillGrid  (id, columns, rows) {
     grid-template-rows: repeat(${columns}, 1fr); ">
     `;
 
-    let seatsSelected = getListOfReservedSeats();
+    let seatsSelected = getListOfSelectedSeats();
 
     for (let r = 0; r<rows; r++) {
         
         for (let c = 0; c < columns; c++) {
 
             let isThisSeatSelected = 0;
-            console.log(seatsSelected);
 
             
-            if (isEntryInList(seatsSelected, r,c)) {
+            if (isEntryAlreadySelected(seatsSelected, r,c)) {
                 isThisSeatSelected = 1
             }
 
@@ -57,6 +56,7 @@ function fillGrid  (id, columns, rows) {
 // denne opretter det specifikke sæde i salen
 //status 0 free, 1 selected, 2 reserved
 function constructSeat (status, r,c) {
+
     let id = "r" + r + "c" + c;
     if (status == 0) {
         return `
@@ -99,27 +99,35 @@ function seatClicked (id) {
         }
     }
 
-    if (seatCanBeSelected(rNumber, cNumber)) {
-        setReserveSeat(rNumber, cNumber)
-        change.outerHTML = constructSeat(1, rNumber,cNumber);
+  
+    let seatsSelected = getListOfSelectedSeats();
+
+    // check om entry allerede eksistere i listen over selected seats
+    if ( isEntryAlreadySelected(seatsSelected,  rNumber, cNumber)) {
+        // unselect pressed seat
+        unselectSeat( rNumber, cNumber);
+        change.outerHTML = constructSeat(0, rNumber,cNumber);
+    }
+
+    else 
+    {
+         // check om der er bestilt nok biletter konta pladser
+        if (selectedSeatsAreLessThanTicketsOrdered(seatsSelected, rNumber, cNumber)) {
+            console.log ("true in make gree");
+            selectSeat(rNumber, cNumber)
+            change.outerHTML = constructSeat(1, rNumber,cNumber);
+        }
     }
 }
 
 
 
 // denne funktion tjekker der er valgt for mange pladser i forhold til bestilte billetter 
-function seatCanBeSelected (r, c) {
+function selectedSeatsAreLessThanTicketsOrdered (seatsSelected, r, c) {
     let totalTickets = calcualteTotalSum().tickets;
-    let seatsSelected = getListOfReservedSeats();
 
-    if (seatsSelected.length < 1) {
-        return true;
-    }
 
-    // check om entry allerede eksistere i liste
-    if (isEntryInList(seatsSelected, r, c)) {
-        return false;
-    }
+
    
     // check om der er valgt nok billetter
     if (totalTickets > seatsSelected.length) {
@@ -129,7 +137,12 @@ function seatCanBeSelected (r, c) {
     return false;
 }
 
-function isEntryInList (seatsSelected, r,c) {
+function isEntryAlreadySelected (seatsSelected, r,c) {
+
+    if(seatsSelected[0] == null) {
+        return false;
+    }
+
     for (let i = 0; i < seatsSelected.length; i++) {
         if (seatsSelected[i].row == r && seatsSelected[i].column == c) {
             return true;
@@ -139,20 +152,37 @@ function isEntryInList (seatsSelected, r,c) {
 }
 
 
-function setReserveSeat (r, c) {
-    let newReservedSeat = {"row": r, "column": c}
-    let oldReservedList = getListOfReservedSeats();
+function selectSeat (r, c) {
+    let newSelectedSeat = {"row": r, "column": c}
+    let selectedSeatList = getListOfSelectedSeats();
 
-    oldReservedList.push(newReservedSeat);
+    selectedSeatList.push(newSelectedSeat);
 
-    sessionStorage.setItem("reservedseats", JSON.stringify(oldReservedList) )
+    sessionStorage.setItem("reservedseats", JSON.stringify(selectedSeatList) )
+}
+
+function unselectSeat (r, c) {
+    let selectedSeatList = getListOfSelectedSeats();
+
+    if (selectedSeatList < 1) return;
+
+    for (let i = 0; i < selectedSeatList.length; i++) {
+        if (   selectedSeatList[i].row    == r
+            && selectedSeatList[i].column == c
+        )
+        {
+            selectedSeatList.splice(i,1);
+
+            sessionStorage.setItem("reservedseats", JSON.stringify(selectedSeatList) )
+            return;
+        }
+    }
 }
 
 
 
-function getListOfReservedSeats () {
+function getListOfSelectedSeats () {
     let reservedSeats = JSON.parse(sessionStorage.getItem("reservedseats"));
-    console.log(reservedSeats);
     if (reservedSeats != null) {
         return reservedSeats;
     }
@@ -287,6 +317,7 @@ function addOrRemoveTicket (id, adding) {
     else {
         if (ticketsOrdered > 0) {
             ticketsOrdered --;
+            removeSelectedSeatWhenRemovingTickets(ticketsOrdered);
         }
         else {
             return;
@@ -297,6 +328,24 @@ function addOrRemoveTicket (id, adding) {
     redrawAmountOrdered(id, ticketsOrdered);
 
     UpdateCheckout();
+}
+
+function removeSelectedSeatWhenRemovingTickets (totalTicketsOrdered) {
+    let listOfSelectedSeats = getListOfSelectedSeats();
+
+    if (listOfSelectedSeats.length < 1) return;
+    if (totalTicketsOrdered >= listOfSelectedSeats.length) return;
+    
+    // remove first entry in list
+    unselectSeat(listOfSelectedSeats[0].row, listOfSelectedSeats[0].column);
+
+    let idOfSeat = "r"+listOfSelectedSeats[0].row + "c" + listOfSelectedSeats[0].column;
+    let change = document.getElementById(idOfSeat);
+
+    console.log("idOfSeat");
+    console.log(idOfSeat);
+
+    change.outerHTML = constructSeat(0, listOfSelectedSeats[0].row, listOfSelectedSeats[0].column);
 }
 
 
