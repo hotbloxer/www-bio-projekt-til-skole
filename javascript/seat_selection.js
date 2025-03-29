@@ -1,7 +1,23 @@
 
+const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
+const selectedShowing = JSON.parse(sessionStorage.getItem("SelectedShowing"));
+
+function loadShowingInfo(selectedMovie, selectedShowing) {
+    let title = document.getElementById('film-title');
+    let runtime = document.getElementById('runtime');
+
+    title.textContent = selectedMovie["Original Title"];
+    runtime.textContent = "Spilletid: " + selectedMovie["Runtime (mins)"] + " min\n";
+}
+
 // indeledende funktion kaldt fra hjemmeside
+
+console.log({selectedMovie, selectedShowing});
+
 function constructCinemaSal() {
-     fetchData("sal4");
+    //  fetchData("sal4");
+    fetchData("sal" + selectedShowing["Hall"]);
+    loadShowingInfo(selectedMovie, selectedShowing);
 }
 
 // fetch data opretter også hele salen
