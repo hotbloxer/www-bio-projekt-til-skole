@@ -12,7 +12,7 @@ function getMovieInfo(selectedMovie) {
     let description = document.getElementById('description');
 
 
-    contentImg.src = selectedMovie["Image"];
+    contentImg.src = selectedMovie["Big Image"];
     contentImg.alt = selectedMovie["Original Title"];
     contentImg.title = selectedMovie["Original Title"];
     title.textContent = selectedMovie["Original Title"];

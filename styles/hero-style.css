@@ -19,6 +19,12 @@
     aspect-ratio: 1/1;
 }
 
+.hero-square img {
+    height: auto;
+    width: 50%;
+
+}
+
 
 .hero-content {
     background-color: aqua;

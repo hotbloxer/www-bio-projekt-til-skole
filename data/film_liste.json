@@ -19,7 +19,9 @@
     "Directors": "Ole Christian Madsen",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/flammen_og_citronen_small.jpg"
+    "Image": "images/flammen_og_citronen_small.jpg",
+    "Big Image": "images/flammen_og_citronen_big.jpg"
+
   },
   {
     "Position": 2,
@@ -40,7 +42,8 @@
     "Directors": "Stefan Fjeldmark, Greg Manwaring, Michael Hegner",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/hjælp_jeg_er_en_fisk_small.jpg"
+    "Image": "images/hjælp_jeg_er_en_fisk_small.jpg",
+    "Big Image": "images/hjælp_jeg_er_en_fisk_big.jpg"
   },
   {
     "Position": 3,
@@ -61,7 +64,8 @@
     "Directors": "Erik Balling",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/olsen_banden_small.jpg"
+    "Image": "images/olsen_banden_small.jpg",
+    "Big Image": "images/olsen_banden_big.jpg"
   },
   {
     "Position": 4,
@@ -82,7 +86,8 @@
     "Directors": "Erik Balling",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/olsen_banden_ser_rødt_small.jpg"
+    "Image": "images/olsen_banden_ser_rødt_small.jpg",
+    "Big Image": "images/olsen_banden_ser_rødt_big.jpg"
   },
   {
     "Position": 5,
@@ -103,8 +108,8 @@
     "Directors": "Erik Balling",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/olsen_bandens_sidste_bedrifter_small.jpg"
-
+    "Image": "images/olsen_bandens_sidste_bedrifter_small.jpg",
+    "Big Image": "images/olsen_bandens_sidste_bedrifter_big.jpg"
   },
   {
     "Position": 6,
@@ -125,8 +130,8 @@
     "Directors": "Brita Wielopolska",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/hodja_fra_pjort_small.jpg"
-
+    "Image": "images/hodja_fra_pjort_small.jpg",
+    "Big Image": "images/hodja_fra_pjort_big.jpg"
   },
   {
     "Position": 7,
@@ -147,7 +152,8 @@
     "Directors": "Bille August",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/pelle_small.jpg" 
+    "Image": "images/pelle_small.jpg",
+    "Big Image": "images/pelle_big.jpg"
   },
   {
     "Position": 8,
@@ -168,7 +174,8 @@
     "Directors": "Jørgen Vestergaard",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/snøvsen_small.jpg"
+    "Image": "images/snøvsen_small.jpg",
+    "Big Image": "images/snøvsen_big.jpg"
   },
   {
     "Position": 9,
@@ -189,8 +196,8 @@
     "Directors": "Lars von Trier",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/dogville_small.jpg"
-
+    "Image": "images/dogville_small.jpg",
+    "Big Image": "images/dogville_big.jpg"
   },
   {
     "Position": 10,
@@ -211,7 +218,8 @@
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/pusher_small.jpg"
+    "Image": "images/pusher_small.jpg",
+    "Big Image": "images/pusher_big.jpg"
 
   },
   {
@@ -233,7 +241,8 @@
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/pusher2_small.jpg"
+    "Image": "images/pusher2_small.jpg",
+    "Big Image": "images/pusher2_big.jpg"
   },
   {
     "Position": 12,
@@ -254,7 +263,8 @@
     "Directors": "Nicolas Winding Refn",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/pusher3_small.jpg"
+    "Image": "images/pusher3_small.jpg",
+    "Big Image": "images/pusher3_big.jpg"
   },
   {
     "Position": 13,
@@ -275,7 +285,8 @@
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/adams_æbler_small.jpg"
+    "Image": "images/adams_æbler_small.jpg",
+    "Big Image": "images/adams_æbler_big.jpg"
   },
   {
     "Position": 14,
@@ -296,7 +307,8 @@
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/de_grønne_slagtere_small.jpg"
+    "Image": "images/de_grønne_slagtere_small.jpg",
+    "Big Image": "images/de_grønne_slagtere_big.jpg"
   },
   {
     "Position": 15,
@@ -317,7 +329,8 @@
     "Directors": "Anders Thomas Jensen",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/blinkende_løgter_small.jpg" 
+    "Image": "images/blinkende_løgter_small.jpg",
+    "Big Image": "images/blinkende_løgter_big.jpg"
   },
   {
     "Position": 16,
@@ -338,7 +351,8 @@
     "Directors": "Mikkel Nørgaard",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/klovn_small.jpg"
+    "Image": "images/klovn_small.jpg",
+    "Big Image": "images/klovn_big.jpg"
   },
   {
     "Position": 17,
@@ -359,7 +373,8 @@
     "Directors": "Thomas Vinterberg",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/festen_small.jpg"
+    "Image": "images/festen_small.jpg",
+    "Big Image": "images/festen_big.jpg"
   },
   {
     "Position": 18,
@@ -380,7 +395,8 @@
     "Directors": "Ole Bornedal",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/nattevagten_small.jpg"
+    "Image": "images/nattevagten_small.jpg",
+    "Big Image": "images/nattevagten_big.jpg"
   },
   {
     "Position": 19,
@@ -401,7 +417,8 @@
     "Directors": "Henning Ørnbak",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/mig_og_mafian_small.jpg"
+    "Image": "images/mig_og_mafian_small.jpg",
+    "Big Image": "images/mig_og_mafian_big.jpg"
   },
   {
     "Position": 20,
@@ -422,7 +439,8 @@
     "Directors": "Kirsten Stenbæk",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/lenin_din_gavtyv_small.jpg"
+    "Image": "images/lenin_din_gavtyv_small.jpg",
+    "Big Image": "images/lenin_din_gavtyv_big.jpg"
   },
   {
     "Position": 21,
@@ -443,7 +461,8 @@
     "Directors": "Poul Bang, Sidney W. Pink",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/reptilicus_small.jpg"
+    "Image": "images/reptilicus_small.jpg",
+    "Big Image": "images/reptilicus_big.jpg"
   },
   {
     "Position": 22,
@@ -464,7 +483,8 @@
     "Directors": "Peter Elfelt",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/kørsel_med_grønlandske_hunde_small.jpg"
+    "Image": "images/kørsel_med_grønlandske_hunde_small.jpg",
+    "Big Image": "images/kørsel_med_grønlandske_hunde_big.jpg"
   },
   {
     "Position": 23,
@@ -485,7 +505,8 @@
     "Directors": "Annelise Hovmand",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/krudt_og_klunker_small.jpg"
+    "Image": "images/krudt_og_klunker_small.jpg",
+    "Big Image": "images/krudt_og_klunker_big.jpg"
   },
   {
     "Position": 24,
@@ -506,7 +527,8 @@
     "Directors": "Urban Gad",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/afgrunden_small.jpg"
+    "Image": "images/afgrunden_small.jpg",
+    "Big Image": "images/afgrunden_big.jpg"
   },
   {
     "Position": 25,
@@ -527,7 +549,8 @@
     "Directors": "Peter Madsen, Jeffrey J. Varab",
     "Your Rating": "",
     "Date Rated": "",
-    "Image": "images/valhalla_small.jpg"
+    "Image": "images/valhalla_small.jpg",
+    "Big Image": "images/valhalla_big.jpg"
   }
 ]
 }

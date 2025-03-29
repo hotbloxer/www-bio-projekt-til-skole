@@ -6,7 +6,7 @@ async function loadMovies() {
     const obj = await response.json();
 
     fillMovieGrid(obj);
-    fillHeroActions(obj);    
+    fillHeroSquares(obj);    
 }
 
 function fillMovieGrid(obj) {
@@ -39,28 +39,29 @@ function fillMovieGrid(obj) {
     });
 }
 
-function fillHeroActions(obj) {
+function fillHeroSquares(obj) {
     let heroSquares = document.getElementsByClassName("hero-content hero-square ");
-    // console.log(heroSquares);
 
     for(let heroSquare of heroSquares) {
         let index = getRandomInt(obj.Movies.length);
+        let movie = obj.Movies[index];
         
         let bigPic = document.createElement('div');
         let img = document.createElement('img');
         let heroAction = document.createElement('div');
         let title = document.createElement('h1');
         let button = document.createElement('button');
-        let description = document.createElement('p');
 
-        img.src = obj.Movies[index]["Image"];
+        img.src = movie["Big Image"]; // TODO add big pictures
+        img.alt = movie["Original Title"];
+        img.title = movie["Original Title"];
+
         heroAction.className = "hero-action";
-        title.textContent = obj.Movies[index]["Original Title"];
-        // description.textContent = obj.Movies[index]["Description"];
-        button.textContent = "Vælg film";
+        title.textContent = movie["Original Title"];
 
+        button.textContent = "Vælg film";
         button.onclick = () => {
-            sessionStorage.setItem("SelectedMovie", JSON.stringify(obj.Movies[index]));
+            sessionStorage.setItem("SelectedMovie", JSON.stringify(movie));
             window.location = "movieinfo.html";
         }
 
@@ -68,7 +69,6 @@ function fillHeroActions(obj) {
         heroAction.appendChild(title);
         heroAction.appendChild(button);
 
-        // heroAction.appendChild(description);
         heroSquare.appendChild(bigPic);
         heroSquare.appendChild(heroAction);
     }
@@ -76,5 +76,5 @@ function fillHeroActions(obj) {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-  }
+}
 
