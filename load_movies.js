@@ -5,8 +5,41 @@ async function loadMovies() {
     const response = await fetch("data/film_liste.json");
     const obj = await response.json();
 
+    movieSearchBar(obj);
     fillMovieGrid(obj);
     fillHeroSquares(obj);    
+}
+
+function movieSearchBar(obj) {
+    let searchbar = document.getElementById('search-bar');
+    let search = document.createElement('input');
+    let button = document.createElement('button');
+    let results = [];
+
+    button.textContent = "Søg";
+    button.onclick = () => {
+        results = [];
+
+        obj.Movies.forEach(movie => {
+            const isInTitles = movie["Original Title"].toLowerCase().includes(search.value.toLowerCase());
+            const isInGenres = movie["Genres"].toLowerCase().includes(search.value.toLowerCase());
+            const isInDirectors = movie["Directors"].toLowerCase().includes(search.value.toLowerCase())
+
+            if(isInDirectors || isInGenres || isInTitles) 
+                results.push(movie);
+        });
+
+        let movieGrid = document.getElementById('all-movies');
+        movieGrid.innerHTML = '';
+
+        for(let movie of results) {
+            let movieContent = fillMovieContent(movie);
+            movieGrid.appendChild(movieContent);
+        }
+    }
+
+    searchbar.appendChild(search);
+    searchbar.appendChild(button);
 }
 
 function fillMovieGrid(obj) {
