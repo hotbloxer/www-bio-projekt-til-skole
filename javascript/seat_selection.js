@@ -6,10 +6,8 @@ function loadShowingInfo(selectedMovie, selectedShowing) {
     let title = document.getElementById('film-title');
     let runtime = document.getElementById('runtime');
 
-    
     title.textContent = selectedMovie["Original Title"];
     runtime.textContent = "Spilletid: " + selectedMovie["Runtime (mins)"] + " min\n";
-
 }
 
 // indeledende funktion kaldt fra hjemmeside
