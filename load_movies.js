@@ -6,7 +6,7 @@ async function loadMovies() {
     const obj = await response.json();
 
     movieSearchBar(obj);
-    fillMovieGrid(obj);
+    fillMovieGrid(obj.Movies);
     fillHeroSquares(obj);    
 }
 
@@ -14,38 +14,33 @@ function movieSearchBar(obj) {
     let searchbar = document.getElementById('search-bar');
     let search = document.createElement('input');
     let button = document.createElement('button');
-    let results = [];
 
     button.textContent = "Søg";
     button.onclick = () => {
-        results = [];
+        let results = [];
 
         obj.Movies.forEach(movie => {
             const isInTitles = movie["Original Title"].toLowerCase().includes(search.value.toLowerCase());
             const isInGenres = movie["Genres"].toLowerCase().includes(search.value.toLowerCase());
             const isInDirectors = movie["Directors"].toLowerCase().includes(search.value.toLowerCase())
+            const isInCast = movie["Cast"].toLowerCase().includes(search.value.toLowerCase());
 
-            if(isInDirectors || isInGenres || isInTitles) 
+            if(isInDirectors || isInGenres || isInTitles || isInCast) 
                 results.push(movie);
         });
 
-        let movieGrid = document.getElementById('all-movies');
-        movieGrid.innerHTML = '';
-
-        for(let movie of results) {
-            let movieContent = fillMovieContent(movie);
-            movieGrid.appendChild(movieContent);
-        }
+        fillMovieGrid(results);
     }
 
     searchbar.appendChild(search);
     searchbar.appendChild(button);
 }
 
-function fillMovieGrid(obj) {
+function fillMovieGrid(movies) {
     let movieGrid = document.getElementById('all-movies');
+    movieGrid.innerHTML = '';
 
-    obj.Movies.forEach(movie => {
+    movies.forEach(movie => {
         let movieContent = fillMovieContent(movie);
         movieGrid.appendChild(movieContent);
     });
@@ -77,9 +72,14 @@ function fillMovieContent(movie) {
 
 function fillHeroSquares(obj) {
     let heroSquares = document.getElementsByClassName("hero-content hero-square ");
-
+    let prevIndices = [];
     for(let heroSquare of heroSquares) {
         let index = getRandomInt(obj.Movies.length);
+        while (prevIndices.includes(index)) {
+            index = getRandomInt(obj.Movies.length);
+        }
+        prevIndices.push(index);
+        
         let movie = obj.Movies[index];
         fillHeroSquare(heroSquare, movie);
     }
