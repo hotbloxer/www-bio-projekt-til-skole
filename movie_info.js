@@ -11,8 +11,6 @@ function getMovieInfo(selectedMovie) {
     let genre = document.getElementById('genre');
     let cast = document.getElementById('cast');
     let year = document.getElementById('year');
-
-
     let description = document.getElementById('description');
 
 
@@ -25,8 +23,6 @@ function getMovieInfo(selectedMovie) {
     genre.textContent = 'Genre: ' + selectedMovie["Genres"];
     cast.textContent = 'Medvirkende: ' + selectedMovie["Cast"];
     year.textContent = 'År: ' + selectedMovie["Year"];
-
-
     description.textContent = selectedMovie["Description"];
 }
 
@@ -88,6 +84,3 @@ function getDates() {
 
     return dates;
 }
-
-
-

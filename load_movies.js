@@ -4,13 +4,14 @@ loadMovies();
 async function loadMovies() {
     const response = await fetch("data/film_liste.json");
     const obj = await response.json();
+    let movies = obj.Movies;
 
-    movieSearchBar(obj);
-    fillMovieGrid(obj.Movies);
-    fillHeroSquares(obj);    
+    movieSearchBar(movies);
+    fillMovieGrid(movies);
+    fillHeroSquares(movies);    
 }
 
-function movieSearchBar(obj) {
+function movieSearchBar(movies) {
     let searchbar = document.getElementById('search-bar');
     let search = document.createElement('input');
     let button = document.createElement('button');
@@ -19,13 +20,14 @@ function movieSearchBar(obj) {
     button.onclick = () => {
         let results = [];
 
-        obj.Movies.forEach(movie => {
+        movies.forEach(movie => {
             const isInTitles = movie["Original Title"].toLowerCase().includes(search.value.toLowerCase());
             const isInGenres = movie["Genres"].toLowerCase().includes(search.value.toLowerCase());
             const isInDirectors = movie["Directors"].toLowerCase().includes(search.value.toLowerCase())
             const isInCast = movie["Cast"].toLowerCase().includes(search.value.toLowerCase());
-
-            if(isInDirectors || isInGenres || isInTitles || isInCast) 
+            const isYear = movie["Year"] === Number(search.value);
+    
+            if(isInDirectors || isInGenres || isInTitles || isInCast || isYear) 
                 results.push(movie);
         });
 
@@ -70,17 +72,18 @@ function fillMovieContent(movie) {
     return movieContent;
 }
 
-function fillHeroSquares(obj) {
+function fillHeroSquares(movies) {
     let heroSquares = document.getElementsByClassName("hero-content hero-square ");
     let prevIndices = [];
+    
     for(let heroSquare of heroSquares) {
-        let index = getRandomInt(obj.Movies.length);
+        let index = getRandomInt(movies.length);
         while (prevIndices.includes(index)) {
-            index = getRandomInt(obj.Movies.length);
+            index = getRandomInt(movies.length);
         }
         prevIndices.push(index);
         
-        let movie = obj.Movies[index];
+        let movie = movies[index];
         fillHeroSquare(heroSquare, movie);
     }
 }
