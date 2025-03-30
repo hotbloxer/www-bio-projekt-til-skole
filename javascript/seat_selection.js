@@ -10,10 +10,6 @@ function loadShowingInfo(selectedMovie, selectedShowing) {
     runtime.textContent = "Spilletid: " + selectedMovie["Runtime (mins)"] + " min\n";
 }
 
-// indeledende funktion kaldt fra hjemmeside
-
-console.log({selectedMovie, selectedShowing});
-
 function constructCinemaSal() {
     //  fetchData("sal4");
     fetchData("sal" + selectedShowing["Hall"]);
@@ -129,7 +125,6 @@ function seatClicked (id) {
     {
          // check om der er bestilt nok biletter konta pladser
         if (selectedSeatsAreLessThanTicketsOrdered(seatsSelected, rNumber, cNumber)) {
-            console.log ("true in make gree");
             selectSeat(rNumber, cNumber)
             change.outerHTML = constructSeat(1, rNumber,cNumber);
         }
@@ -142,9 +137,6 @@ function seatClicked (id) {
 function selectedSeatsAreLessThanTicketsOrdered (seatsSelected, r, c) {
     let totalTickets = calcualteTotalSum().tickets;
 
-
-
-   
     // check om der er valgt nok billetter
     if (totalTickets > seatsSelected.length) {
         return true;
@@ -196,7 +188,6 @@ function unselectSeat (r, c) {
 }
 
 
-
 function getListOfSelectedSeats () {
     let reservedSeats = JSON.parse(sessionStorage.getItem("reservedseats"));
     if (reservedSeats != null) {
@@ -205,59 +196,97 @@ function getListOfSelectedSeats () {
     return [];
 }
 
-
 // constructs tickets display from the JSON "tickets_data.json"
-function makeTickets () {
+function makeTicketsAndSnackDisplay () {
 
     let ticketDisplay = document.getElementById("ticket-display");
-    let ticketDisplayConstructor = "";
-    standardPris = 150;
-
+    let outputHTMLContainer = "";
+    let outputSessionContainer = "";
 
     fetch("data/tickets_data.json")
     .then(res => res.json())
     .then(data => {
         
-        var ticketSessionData =  [];
+        // fill tickets og snacks over to separate gange, og kæd outputtet sammen
+        // en for html replacement koden, og en for session data koden
+        let outputHolder = fillTicketsFromDATA (data.tickets)
+        outputHTMLContainer = outputHolder.httpData;
+        outputSessionContainer = outputHolder.sessionData;
+        
+        outputHolder = fillTicketsFromDATA (data.snacks)
+        outputHTMLContainer += outputHolder.httpData;
 
-        for (let i = 0; i < data.tickets.length; i++) {  
+        // dette kode sætter 2 arrays af objeckter sammen. concat virker åbenbart kun med rene string arrays
+        Array.prototype.push.apply(outputSessionContainer, outputHolder.sessionData);
 
-            // get key for current data
-            let ticketKey = Object.keys(data.tickets[i]);
+        setSessionWareData (outputSessionContainer);
 
-            // get value from current data
-            let ticket = Object.values(data.tickets[i])[0];
-
-            //check for data i session for tickets
-            let amountOfTickets = getAmountOfTicketsOrdered(ticketKey);
-
-            // beregn pris med discount
-            let price = (standardPris - (ticket.discount / 100 * standardPris));
-
-            
-            // push ticket information til session ticket dataArray
-            let collectInfo = {"name": ticketKey[0], "amount": amountOfTickets, "price": price };
-
-            // saml infromationer om biletter til sessiondata
-            ticketSessionData.push( collectInfo);       
-            
-            ticketDisplayConstructor += constructTicket(
-                ticket.title,
-                price,
-                ticket.beskrivelse,
-                ticketKey[0],
-                amountOfTickets);
-        }
-
-        setSessionTicketData(ticketSessionData);
-
-        ticketDisplay.innerHTML = ticketDisplayConstructor;
-
+        ticketDisplay.innerHTML = outputHTMLContainer;
         UpdateCheckout() 
     })
     .catch(e => {
         console.log(e);
     })
+}
+
+function fillTicketsFromDATA (ticketData) {
+    
+    let standardPris = 150;
+    var ticketSessionData =  [];
+    let ticketDisplayConstructor = "";
+
+    for (let i = 0; i < ticketData.length; i++) {  
+
+        //check for data i session for tickets
+        let amountOfTickets = getAmountOfWaresOrdered(ticketData[i].type);
+
+        let price = (standardPris - (ticketData[i].discount / 100 * standardPris));
+        
+        // push ticket information til session ticket dataArray
+        let collectInfo = {"kategori":ticketData[i].kategori, "name": ticketData[i].type, "amount": amountOfTickets, "price": price };
+
+        // saml infromationer om biletter til sessiondata
+        ticketSessionData.push(collectInfo);       
+        
+        ticketDisplayConstructor += constructTicket(
+            ticketData[i].title,
+            price,
+            ticketData[i].beskrivelse,
+            ticketData[i].type,
+            amountOfTickets);
+    }
+    
+    
+    return {"httpData" : ticketDisplayConstructor, "sessionData": ticketSessionData};
+}
+
+function fillSnacksFromData (snackData) {
+    let snackConstruct = "";
+    let snackSessionData = [];
+    for (let i = 0; i< snackData.length; i++) {
+
+        //check for data i session for snacks
+        let amountOfSnacks = getAmountOfWaresOrdered(snackData[i].type);
+
+        // push ticket information til session ticket dataArray
+        let collectInfo = {"kategori":snackData[i].kategori, "name": snackData[i].type, "amount": amountOfSnacks, "price": snackData[i].pris };
+
+        // saml infromationer om biletter til sessiondata
+        snackSessionData.push(collectInfo);  
+
+        console.log ("amountOfSnacks");
+        console.log (collectInfo);
+        snackConstruct += constructSnack(
+            snackData[i].title,
+            snackData[i].pris,
+            snackData[i].beskrivelse,
+            snackData[i].type,
+            amountOfSnacks);
+    }
+
+    setSessionWareData(snackSessionData);
+    return snackConstruct;
+
 }
 
 
@@ -269,19 +298,24 @@ function UpdateCheckout () {
     let ticketsBought = document.getElementById("ticketsBought");
 
     sum.outerHTML = `<p id = totalSum>samlet pris: ${sumAndTickets.sum}</p>`
-    ticketsBought.outerHTML = `<p id = ticketsBought>antal billetter: ${sumAndTickets.tickets}</p>`
+    ticketsBought.outerHTML = `<p id = ticketsBought>antal vare: ${sumAndTickets.tickets + sumAndTickets.snacks}</p>`
 }
 
 
 // sætter dataen for valgte biletter i sessionStorage
-function setSessionTicketData(data) {
+function setSessionWareData(data) {
     sessionStorage.setItem("sessionTickets", JSON.stringify(data));
 }
+
+function getSessionWareData () {
+    return JSON.parse(sessionStorage.getItem("sessionTickets"));
+}
+
 
 
 // opdatere antallet af bestilte biletter
 function changeTicketSessionData (id, newStatus) {
-    let oldValue = getSessionticketData();
+    let oldValue = getSessionWareData();
   
 
     for (let i = 0; i< oldValue.length; i++) {
@@ -290,13 +324,9 @@ function changeTicketSessionData (id, newStatus) {
         }
     }
 
-    setSessionTicketData(oldValue);
- 
+    setSessionWareData(oldValue);
 } 
 
-function getSessionticketData () {
-    return JSON.parse(sessionStorage.getItem("sessionTickets"));
-}
 
 
 
@@ -323,10 +353,32 @@ function constructTicket (title, pris, beskrivelse, id, amount) {
 }
 
 
+function constructSnack (name, pris, beskrivelse, id, amount) {
+    return `                        
+    <div class = ticket-display-template>
+        <div>
+            <p>${name}</p>
+            <p>Pris ${pris}dkk </p>
+        </div>
+        
+        <button onclick = "ticketClicked(sub${id})" id = sub${id} class = "subtract-button square justify-content-center">
+                <p class = "remove-margin">-</p> 
+        </button>
+        <div class = "center">
+            <p id = amount${id}>${amount}</p>
+        </div>
+        
+        <button onclick = "ticketClicked(add${id})" id = add${id} class = "add-button square justify-content-center"> 
+            <p  class = "remove-margin">+</p> 
+        </button>   
+    </div>
+    `
+}
+
+
 
 function addOrRemoveTicket (id, adding) {
-    let ticketsOrdered = getAmountOfTicketsOrdered(id);
-    console.log (ticketsOrdered);
+    let ticketsOrdered = getAmountOfWaresOrdered(id);
     if (adding) {
         ticketsOrdered ++;
     }
@@ -357,9 +409,6 @@ function removeSelectedSeatWhenRemovingTickets (totalTicketsOrdered) {
 
     let idOfSeat = "r"+listOfSelectedSeats[0].row + "c" + listOfSelectedSeats[0].column;
     let change = document.getElementById(idOfSeat);
-
-    console.log("idOfSeat");
-    console.log(idOfSeat);
 
     change.outerHTML = constructSeat(0, listOfSelectedSeats[0].row, listOfSelectedSeats[0].column);
 }
@@ -395,20 +444,21 @@ function ticketClicked (id) {
 }
 
 
-function getAmountOfTicketsOrdered (idNumber) {
 
-    let ticketDataFromSessionData = getSessionticketData();
-
+function getAmountOfWaresOrdered (idNumber) {
+    let ticketDataFromSessionData = getSessionWareData();
+    
     if (ticketDataFromSessionData != null) {
 
         for (let i = 0; i < ticketDataFromSessionData.length; i++) {
 
             if (ticketDataFromSessionData[i].name == idNumber)
             {
+                
                 return ticketDataFromSessionData[i].amount;  
             }
         }
-        return ticketDataFromSessionData;
+        return 0;
         
     }
     else {
@@ -419,21 +469,32 @@ function getAmountOfTicketsOrdered (idNumber) {
 
 
 function calcualteTotalSum () {
-    let sessionTicketData = getSessionticketData();
+    let sessionWareData = getSessionWareData();
     let sum = 0;
     let tickets = 0;
-    if (sessionTicketData == null) {
+    let snacks = 0;
+    if (sessionWareData == null) {
         return {"sum": sum, "tickets": tickets};
     }
 
-    for (let i = 0; i< sessionTicketData.length; i++) {
-        let currentTickets = sessionTicketData[i];
+    for (let i = 0; i< sessionWareData.length; i++) {
+        let currentWares = sessionWareData[i];
 
-        sum += currentTickets.price * currentTickets.amount;
-        tickets += currentTickets.amount;
+        if (currentWares.kategori == "snack") {
+            snacks += currentWares.amount;
+        }
+        if (currentWares.kategori == "billet") {
+            tickets += currentWares.amount;
+        }
+
+        sum += currentWares.price * currentWares.amount;
 
     }
-    return {"sum": sum, "tickets": tickets};
+    return {"sum": sum, "tickets": tickets, "snacks": snacks};
+}
+
+function goToConfirmation () {
+    window.location = "movieinfo.html";
 }
 
 

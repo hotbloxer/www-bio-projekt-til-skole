@@ -1,11 +1,18 @@
 {
     "tickets":
     [
-        {"almindelig": {"discount": 0, "title": "Standard billet", "beskrivelse": "For alle mellem 6 og 60år"}},
-        {"senior": {"discount": 40, "title": "Senior billet", "beskrivelse": "Fra 60år"}},
-        {"kids": {"discount": 30, "title": "Børne billet", "beskrivelse": "0-6 år"}},
-        {"viaStudent": {"discount": 99, "title": "VIA studie billet", "beskrivelse": "Ved fremvisning af gyldigt via id"}}
-    ]
+        {"type": "almindelig",  "kategori": "billet",    "discount": 0,  "title": "Standard billet",     "beskrivelse": "For alle mellem 6 og 60år"},
+        {"type": "senior",      "kategori": "billet",    "discount": 40, "title": "Senior billet",       "beskrivelse": "Fra 60år"},
+        {"type": "kids",        "kategori": "billet",    "discount": 30, "title": "Børne billet",        "beskrivelse": "0-6 år"},
+        {"type": "viaStudent",  "kategori": "billet",   "discount": 99, "title": "VIA studie billet",   "beskrivelse": "Ved fremvisning af gyldigt via id"}
+    ],
 
+    "snacks":
+    [
+        {"type":"standard",         "kategori": "snack",    "pris": 150,    "title": "Mellem popcorn og sodavand",  "beskrivelse": ""},
+        {"type":"XL",               "kategori": "snack",    "pris": 160,    "title": "Stor popcorn og sodavand",    "beskrivelse": ""},
+        {"type":"Lawless",          "kategori": "snack",    "pris": 300,    "title": "Fri bland selv slik bar",     "beskrivelse": ""},
+        {"type":"viaStudentSnack",  "kategori": "snack",    "pris": 20,     "title": "Frit valg + budweiss",        "beskrivelse": ""}
+    ]
 
 }
