@@ -13,29 +13,26 @@ async function loadMovies() {
 
 function movieSearchBar(movies) {
     let searchbar = document.getElementById('search-bar');
-    let search = document.createElement('input');
-    let button = document.createElement('button');
+    let searchInput = document.createElement('input');
+    let searchButton = document.createElement('button');
 
-    button.textContent = "Søg";
-    button.onclick = () => {
-        let results = [];
+    searchButton.textContent = "Søg";
+    searchButton.onclick = () => {
+        let searchResults = movies.filter(movie => {
+            const isInTitles = movie["Original Title"].toLowerCase().includes(searchInput.value.toLowerCase());
+            const isInGenres = movie["Genres"].toLowerCase().includes(searchInput.value.toLowerCase());
+            const isInDirectors = movie["Directors"].toLowerCase().includes(searchInput.value.toLowerCase())
+            const isInCast = movie["Cast"].toLowerCase().includes(searchInput.value.toLowerCase());
+            const isYear = movie["Year"] === Number(searchInput.value);
 
-        movies.forEach(movie => {
-            const isInTitles = movie["Original Title"].toLowerCase().includes(search.value.toLowerCase());
-            const isInGenres = movie["Genres"].toLowerCase().includes(search.value.toLowerCase());
-            const isInDirectors = movie["Directors"].toLowerCase().includes(search.value.toLowerCase())
-            const isInCast = movie["Cast"].toLowerCase().includes(search.value.toLowerCase());
-            const isYear = movie["Year"] === Number(search.value);
-    
-            if(isInDirectors || isInGenres || isInTitles || isInCast || isYear) 
-                results.push(movie);
+            return isInDirectors || isInGenres || isInTitles || isInCast || isYear;
         });
 
-        fillMovieGrid(results);
+        fillMovieGrid(searchResults);
     }
 
-    searchbar.appendChild(search);
-    searchbar.appendChild(button);
+    searchbar.appendChild(searchInput);
+    searchbar.appendChild(searchButton);
 }
 
 function fillMovieGrid(movies) {

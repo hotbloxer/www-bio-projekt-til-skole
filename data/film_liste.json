@@ -21,8 +21,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/flammen_og_citronen_small.jpg",
-    "Big Image": "images/flammen_og_citronen_big.jpg"
-
+    "Big Image": "images/flammen_og_citronen_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
   },
   {
     "Position": 2,
@@ -45,7 +45,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/hjælp_jeg_er_en_fisk_small.jpg",
-    "Big Image": "images/hjælp_jeg_er_en_fisk_big.jpg"
+    "Big Image": "images/hjælp_jeg_er_en_fisk_big.jpg",
+    "Age": "Frarådes børn under 7 år"
   },
   {
     "Position": 3,
@@ -68,7 +69,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/olsen_banden_small.jpg",
-    "Big Image": "images/olsen_banden_big.jpg"
+    "Big Image": "images/olsen_banden_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 4,
@@ -91,7 +93,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/olsen_banden_ser_rødt_small.jpg",
-    "Big Image": "images/olsen_banden_ser_rødt_big.jpg"
+    "Big Image": "images/olsen_banden_ser_rødt_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 5,
@@ -114,7 +117,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/olsen_bandens_sidste_bedrifter_small.jpg",
-    "Big Image": "images/olsen_bandens_sidste_bedrifter_big.jpg"
+    "Big Image": "images/olsen_bandens_sidste_bedrifter_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 6,
@@ -137,7 +141,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/hodja_fra_pjort_small.jpg",
-    "Big Image": "images/hodja_fra_pjort_big.jpg"
+    "Big Image": "images/hodja_fra_pjort_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 7,
@@ -160,7 +165,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/pelle_small.jpg",
-    "Big Image": "images/pelle_big.jpg"
+    "Big Image": "images/pelle_big.jpg",
+    "Age": "Tilladt for børn over 12 år"
   },
   {
     "Position": 8,
@@ -183,7 +189,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/snøvsen_small.jpg",
-    "Big Image": "images/snøvsen_big.jpg"
+    "Big Image": "images/snøvsen_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 9,
@@ -206,7 +213,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/dogville_small.jpg",
-    "Big Image": "images/dogville_big.jpg"
+    "Big Image": "images/dogville_big.jpg",
+    "Age": "Tilladt for børn fra 11 år"
   },
   {
     "Position": 10,
@@ -229,8 +237,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/pusher_small.jpg",
-    "Big Image": "images/pusher_big.jpg"
-
+    "Big Image": "images/pusher_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
   },
   {
     "Position": 11,
@@ -253,8 +261,9 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/pusher2_small.jpg",
-    "Big Image": "images/pusher2_big.jpg"
-  },
+    "Big Image": "images/pusher2_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
+  },  
   {
     "Position": 12,
     "Const": "tt0425379",
@@ -276,7 +285,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/pusher3_small.jpg",
-    "Big Image": "images/pusher3_big.jpg"
+    "Big Image": "images/pusher3_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
   },
   {
     "Position": 13,
@@ -299,7 +309,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/adams_æbler_small.jpg",
-    "Big Image": "images/adams_æbler_big.jpg"
+    "Big Image": "images/adams_æbler_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
   },
   {
     "Position": 14,
@@ -322,7 +333,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/de_grønne_slagtere_small.jpg",
-    "Big Image": "images/de_grønne_slagtere_big.jpg"
+    "Big Image": "images/de_grønne_slagtere_big.jpg",
+    "Age": "Tilladt for børn fra 11 år"
   },
   {
     "Position": 15,
@@ -345,7 +357,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/blinkende_løgter_small.jpg",
-    "Big Image": "images/blinkende_løgter_big.jpg"
+    "Big Image": "images/blinkende_løgter_big.jpg",
+    "Age": "Tilladt for børn fra 15 år"
   },
   {
     "Position": 16,
@@ -368,7 +381,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/klovn_small.jpg",
-    "Big Image": "images/klovn_big.jpg"
+    "Big Image": "images/klovn_big.jpg",
+    "Age": "Tilladt for børn fra 11 år"
   },
   {
     "Position": 17,
@@ -391,7 +405,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/festen_small.jpg",
-    "Big Image": "images/festen_big.jpg"
+    "Big Image": "images/festen_big.jpg",
+    "Age": "Tilladt for børn fra 11 år"
   },
   {
     "Position": 18,
@@ -414,7 +429,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/nattevagten_small.jpg",
-    "Big Image": "images/nattevagten_big.jpg"
+    "Big Image": "images/nattevagten_big.jpg",
+    "Age": "Forbudt for børn u. 16 år (ej vurderet 1970-1997)"
   },
   {
     "Position": 19,
@@ -437,7 +453,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/mig_og_mafian_small.jpg",
-    "Big Image": "images/mig_og_mafian_big.jpg"
+    "Big Image": "images/mig_og_mafian_big.jpg",
+    "Age": "Tilladt for alle (1935-1997)"
   },
   {
     "Position": 20,
@@ -460,7 +477,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/lenin_din_gavtyv_small.jpg",
-    "Big Image": "images/lenin_din_gavtyv_big.jpg"
+    "Big Image": "images/lenin_din_gavtyv_big.jpg",
+    "Age": "Tilladt for alle (1935-1997)"
   },
   {
     "Position": 21,
@@ -483,7 +501,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/reptilicus_small.jpg",
-    "Big Image": "images/reptilicus_big.jpg"
+    "Big Image": "images/reptilicus_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 22,
@@ -506,7 +525,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/kørsel_med_grønlandske_hunde_small.jpg",
-    "Big Image": "images/kørsel_med_grønlandske_hunde_big.jpg"
+    "Big Image": "images/kørsel_med_grønlandske_hunde_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 23,
@@ -529,7 +549,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/krudt_og_klunker_small.jpg",
-    "Big Image": "images/krudt_og_klunker_big.jpg"
+    "Big Image": "images/krudt_og_klunker_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 24,
@@ -552,7 +573,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/afgrunden_small.jpg",
-    "Big Image": "images/afgrunden_big.jpg"
+    "Big Image": "images/afgrunden_big.jpg",
+    "Age": "Tilladt for alle"
   },
   {
     "Position": 25,
@@ -575,7 +597,8 @@
     "Your Rating": "",
     "Date Rated": "",
     "Image": "images/valhalla_small.jpg",
-    "Big Image": "images/valhalla_big.jpg"
+    "Big Image": "images/valhalla_big.jpg",
+    "Age": "Frarådes børn under 7 år"
   }
 ]
 }

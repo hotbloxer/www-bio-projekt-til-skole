@@ -5,6 +5,7 @@ getMovieSchedule(selectedMovie);
 
 function getMovieInfo(selectedMovie) {
     let contentImg = document.getElementById('content-img');
+    let age = document.getElementById('age');
     let title = document.getElementById('movie-title');
     let director = document.getElementById('director');
     let runtime = document.getElementById('runtime');
@@ -17,6 +18,7 @@ function getMovieInfo(selectedMovie) {
     contentImg.src = selectedMovie["Big Image"];
     contentImg.alt = selectedMovie["Original Title"];
     contentImg.title = selectedMovie["Original Title"];
+    age.textContent = "Aldersgrænse: " + selectedMovie["Age"];
     title.textContent = selectedMovie["Original Title"];
     director.textContent = 'Instruktør: ' + selectedMovie["Directors"];
     runtime.textContent = 'Spilletid: ' + selectedMovie["Runtime (mins)"] + ' min';
