@@ -15,7 +15,9 @@ function movieSearchBar(movies) {
     let searchbar = document.getElementById('search-bar');
     let searchInput = document.createElement('input');
     let searchButton = document.createElement('button');
+    let resetButton = document.createElement('button');
 
+    searchInput.placeholder = "titel, isntruktør år, medvirkende";
     searchButton.textContent = "Søg";
     searchButton.onclick = () => {
         let searchResults = movies.filter(movie => {
@@ -31,8 +33,15 @@ function movieSearchBar(movies) {
         fillMovieGrid(searchResults);
     }
 
+    resetButton.textContent = "Nulstil søgning";
+    resetButton.onclick = () => {
+        fillMovieGrid(movies);
+        searchInput.value = '';
+    }
+
     searchbar.appendChild(searchInput);
     searchbar.appendChild(searchButton);
+    searchbar.appendChild(resetButton);
 }
 
 function fillMovieGrid(movies) {
