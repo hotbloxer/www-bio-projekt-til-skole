@@ -10,6 +10,11 @@ h1 {
     color: white;
 }
 
+h4 {
+    color: white;
+
+}
+
 p {
     color: white;
     margin: 0.1em;
@@ -66,7 +71,8 @@ footer {
     gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-   width: 100%;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .default-padding-left {
@@ -91,4 +97,15 @@ form {
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+
+    .info-wrapper {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
