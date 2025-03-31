@@ -82,7 +82,7 @@ function ticketHTMLString (billetType, row, column) {
         ${billetType}
         </p>
         <p>
-        Vises: Sal: ??, kl:  ??
+        Vises: Sal: ${selectedShowing.Hall}, kl:  ${selectedShowing.Time}
         </p>
         <p>
             plads: række ${row}, sæde ${column} 
@@ -95,6 +95,8 @@ function ticketHTMLString (billetType, row, column) {
 
 function constructSnacks (snacks) {
     let outHtml = document.getElementById("confirmSnacks");
+    console.log("snacks");
+    console.log(snacks);
 
     let constructSnackDisplay = `<div id = "confirmSnacks" class = "split_grid">`;
 
@@ -102,7 +104,8 @@ function constructSnacks (snacks) {
        
             constructSnackDisplay += snackHTMLString(
             snacks[i].name,
-            snacks[i].amount
+            snacks[i].amount,
+            snacks[i].title
             )
     }
 
@@ -110,13 +113,16 @@ function constructSnacks (snacks) {
     outHtml.outerHTML = constructSnackDisplay;
 }
 
-function snackHTMLString (snackNavn, antal,) {
+function snackHTMLString (snackNavn, antal, beskrivelse) {
     return `
         
             <div class = "default-padding-left">
                 <h2>
                     ${snackNavn}
                 </h2>
+                 <p>
+                    ${beskrivelse}
+                </p>
                 <p>
                     antal: ${antal}
                 </p>

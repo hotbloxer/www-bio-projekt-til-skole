@@ -1,6 +1,5 @@
 .planner-wrapper {
-    background-color: rgb(203, 239, 239);
-    padding-left: 5%;
+    width: 100%;   
 
 
 }
@@ -12,17 +11,29 @@
 
 .available-movies-wrapper {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 1em ;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    
 
+}
+
+.ticket-icon {
+    height: 1.5rem;
 }
 
 .movie-content {
     aspect-ratio: 1 / 2;
     display: grid;
     grid-template-rows: 8fr 1fr 2fr;
+    object-fit: fill;
+    width: 100%; 
+    background-color: #2b364a;
 }
 
+.movie-list-image {
+    width: 100%;
+}
 
 
 @media only screen and (max-width: 600px){

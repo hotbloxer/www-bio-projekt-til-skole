@@ -1,0 +1,22 @@
+
+.pages-wrapper {
+    float: left;
+    display: block;
+
+  }
+
+.link-display {
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+ .list-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  

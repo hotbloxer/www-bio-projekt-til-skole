@@ -1,12 +1,19 @@
 
 
 .hero-wrapper {
+    margin-top: 1rem;
     gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
    width: 100%;
 
+}
+
+.scale-font {
+    font-size: 1.1em;
+    object-fit: contain;
+    color: white;
 }
 
 .hero-big {
@@ -17,27 +24,40 @@
 
 .hero-square {
     aspect-ratio: 1/1;
+    overflow: hidden;
 }
 
 .hero-square img {
-    height: auto;
-    width: 60%;
+    object-fit: fill;
+    width: 100%;
+   
 }
 
+.hero-button {
+    background-color: #175dcc;
+    color: white;
+}
 
 .hero-content {
     background-color: aqua;
     display: grid;
     grid-template-rows: 5fr 1fr;
-    height: 100%;
+    width: 100%;
+    position: relative;
+
+    
 }
 
 .hero-action {
     display: grid;
     grid-template-columns: 4fr 1fr;
-
-    background-color: rgb(40, 102, 102);
-    padding-left: 5%;
+    z-index: 1;
+    background-color: #2b364a;
+    position: absolute;
+    bottom: 0;
+    height: 4em;
+    width: 100%;
+ 
 
 }
 
