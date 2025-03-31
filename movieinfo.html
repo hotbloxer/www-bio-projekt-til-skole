@@ -6,9 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/defaultstyle.css">
         <link rel="stylesheet" href="styles/movieinfo.css">
+
+        <link rel="stylesheet" href="styles/header_and_footer_style.css">
+        <script src="javascript/header_and_footer_constructor.js"></script>
     </head>
     <body class = "page-frame ">  
-        <header>
+        <header id = "headeren">
             <h1 class = header-h1>Filmhistorie i verdensklasse</h1>
         </header>
       
@@ -67,16 +70,19 @@
         </main>
 
 
-        <footer>
+        <footer id = "footer-id">
             <h3> Filmhistorie i Danmarks klasse</h3>
+            <p>Dansk film på lærredet, hygge i sædet!</p>
             <div class = "footer-grid">
-                <div>om os</div>
-                <div>kontakt</div>
-                <div>søg i film katalog</div>
 
+                <a href="about.html">  OM OS</a>
+                <a href="contact.html"> KONTATK</1>
+                <a href="index.html"> FORSIDE</1>
 
             </div>
         </footer>
+        <script> setHeaderAndFooter() </script>
         <script src="movie_info.js"></script>
+        
     </body>
 </html>
