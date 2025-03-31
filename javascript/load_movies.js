@@ -2,7 +2,7 @@
 loadMovies();
 
 async function loadMovies() {
-    const response = await fetch("data/film_liste.json");
+    const response = await fetch("./data/film_liste.json");
     const obj = await response.json();
     let movies = obj.Movies;
 
@@ -59,7 +59,7 @@ function fillMovieContent(movie) {
     let image = document.createElement('img');
     let title = document.createElement('p');
     let button = document.createElement('button');
-    let ticketImage = document.createElement('img')
+    let ticketImage = document.createElement('img');
     
     movieContent.className = "movie-content";
 

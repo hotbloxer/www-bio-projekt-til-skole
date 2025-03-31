@@ -29,7 +29,7 @@
     object-fit: fill;
     width: 100%; 
     background-color: #2b364a;
-    height: 100%;
+    text-align: center;
 }
 
 .movie-list-image {

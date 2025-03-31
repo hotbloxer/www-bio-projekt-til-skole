@@ -29,7 +29,7 @@ function getMovieInfo(selectedMovie) {
 }
 
 async function getMovieSchedule(selectedMovie) {
-    const response = await fetch('Data/spille_tider.json');
+    const response = await fetch('./Data/spille_tider.json');
     const obj = await response.json();
 
     let schedule = obj.Movies.find(movie => movie["Title"] === selectedMovie["Original Title"]);
@@ -50,6 +50,7 @@ async function getMovieSchedule(selectedMovie) {
             let hall = document.createElement('p');
             let time = document.createElement('p');
             let button = document.createElement('button');
+                
 
             showingBox.className = 'display-date';
             hall.textContent = "Sal " + showing["Hall"];

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filmhistorie, i danmarks klasse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/defaultstyle.css">
+        <link rel="stylesheet" href="styles/findMovie.css">
+        <link rel="stylesheet" href="styles/hero-style.css">
+        <link rel="stylesheet" href="styles/header_and_footer_style.css">
+        <script src="javascript/header_and_footer_constructor.js"></script>
+    </head>
+
+    <body class="page-frame ">   
+        <header id = "headeren">
+        </header> 
+        <h1> Kontakt os! </h1>       
+        <p>
+            telefon: +45 99 99 99 99
+        </p>
+        <p>
+            email: <a href="mailto:bio@bio.dk"> bio@bio.dk </a>
+        </p>
+        <form>
+            <label for="fname">Navn </label>
+            <input type="text" id="name" name="firstname" placeholder="Dit navn">
+            <label for="fname">Email </label>
+            <input type="text" id="name" name="firstname" placeholder="Email">
+            <label for="subject">Besked</label>
+            <textarea id="subject" name="subject" placeholder="Besked " style="height:200px">
+            </textarea>
+
+            <button> Send </button>
+        </form>
+        
+        <footer>
+            <h3> Filmhistorie i Danmarks klasse</h3>
+            <div class = "footer-grid">
+                <div> <a href="about.html"> Om os </a></div>
+                <div> <a href="contact.html"> Kontakt </a></div>
+                <div> <a href=#headeren> Toppen af siden  </a></div>                          
+            </div>
+        </footer>
+        <script> setHeaderAndFooter()</script>
+    </body>
+
+</html>
