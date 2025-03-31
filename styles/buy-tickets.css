@@ -61,6 +61,7 @@
 
 
 .seats-container {
+    background-color: rgb(24, 24, 99);
     margin: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
