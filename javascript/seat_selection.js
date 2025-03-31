@@ -1,3 +1,8 @@
+// tracker om der er valgt lige så mange sæder som biletter
+var canContinueToConfirmation = false;
+
+// bruges til at tracke om der er for mange valgte biletter
+var totalAvailableTickets = 0;
 
 const selectedMovie = JSON.parse(sessionStorage.getItem("SelectedMovie"));
 const selectedShowing = JSON.parse(sessionStorage.getItem("SelectedShowing"));
@@ -25,6 +30,8 @@ function fetchData (sal) {
 
         let val = Object.values(data.find(item => item[sal]));
         fillGrid("seats", val[0].columns, val[0].rows);
+
+        totalAvailableTickets = val[0].columns * val[0].rows;
 
     })
     .catch(e => {
@@ -114,6 +121,10 @@ function seatClicked (id) {
   
     let seatsSelected = getListOfSelectedSeats();
 
+
+
+
+
     // check om entry allerede eksistere i listen over selected seats
     if ( isEntryAlreadySelected(seatsSelected,  rNumber, cNumber)) {
         // unselect pressed seat
@@ -122,26 +133,33 @@ function seatClicked (id) {
     }
 
     else 
-    {
-         // check om der er bestilt nok biletter konta pladser
-        if (selectedSeatsAreLessThanTicketsOrdered(seatsSelected, rNumber, cNumber)) {
-            selectSeat(rNumber, cNumber)
-            change.outerHTML = constructSeat(1, rNumber,cNumber);
-        }
-    }
+            // check om der er bestilt nok biletter konta pladser
+            if (selectedSeatsAreLessThanTicketsOrdered(seatsSelected, rNumber, cNumber)) {
+                selectSeat(rNumber, cNumber)
+                change.outerHTML = constructSeat(1, rNumber,cNumber);
+            } 
+
+  
+
 }
 
 
 
 // denne funktion tjekker der er valgt for mange pladser i forhold til bestilte billetter 
 function selectedSeatsAreLessThanTicketsOrdered (seatsSelected, r, c) {
-    let totalTickets = calcualteTotalSum().tickets;
+    let  totalTickets = calcualteTotalSum().tickets;
 
     // check om der er valgt nok billetter
     if (totalTickets > seatsSelected.length) {
+
+        if (seatsSelected.length +1 == totalTickets) {
+            canContinueToConfirmation = true;
+        }
+
         return true;
     }
 
+    canContinueToConfirmation = true;
     return false;
 }
 
@@ -311,22 +329,31 @@ function getSessionWareData () {
     return JSON.parse(sessionStorage.getItem("sessionTickets"));
 }
 
+function isTicket (id) {
+    let sessionData = getSessionWareData();
+ 
+    for (let i = 0; i< sessionData.length; i++) {
 
+        if (sessionData[i].name == id) {
+            return sessionData[i].kategori == "billet";
+        }
+    }
+}
 
 // opdatere antallet af bestilte biletter
 function changeTicketSessionData (id, newStatus) {
     let oldValue = getSessionWareData();
-  
 
+    totalOrderedTickets = 0;
+ 
     for (let i = 0; i< oldValue.length; i++) {
+
         if (oldValue[i].name == id) {
             oldValue[i].amount = newStatus;
         }
     }
-
     setSessionWareData(oldValue);
 } 
-
 
 
 
@@ -378,22 +405,34 @@ function constructSnack (name, pris, beskrivelse, id, amount) {
 
 
 function addOrRemoveTicket (id, adding) {
-    let ticketsOrdered = getAmountOfWaresOrdered(id);
+    
+    totalTicketsAdded = calcualteTotalSum().tickets;
+    sessionWares = getSessionWareData();
+    
+    if (totalTicketsAdded >= totalAvailableTickets && adding && isTicket(id)) {
+        alert("Der er ikke flere biletter til rådighed");
+        return;
+    }
+    
+    let ticketsOrderedOfThisKind = getAmountOfWaresOrdered(id);
+
+
+
     if (adding) {
-        ticketsOrdered ++;
+        ticketsOrderedOfThisKind ++;
     }
     else {
-        if (ticketsOrdered > 0) {
-            ticketsOrdered --;
-            removeSelectedSeatWhenRemovingTickets(ticketsOrdered);
+        if (ticketsOrderedOfThisKind > 0) {
+            ticketsOrderedOfThisKind --;
+            removeSelectedSeatWhenRemovingTickets(ticketsOrderedOfThisKind);
         }
         else {
             return;
         }
     }
 
-    changeTicketSessionData(id, ticketsOrdered);
-    redrawAmountOrdered(id, ticketsOrdered);
+    changeTicketSessionData(id, ticketsOrderedOfThisKind);
+    redrawAmountOrdered(id, ticketsOrderedOfThisKind);
 
     UpdateCheckout();
 }
@@ -425,6 +464,8 @@ function ticketClicked (id) {
     let command = "";
     let idNumber = "";
 
+    // separer ved at checke første bogstaver
+    // command kan være add eller sub
     for (let i = 0; i < id.id.length; i++) {
         if (i < 3) {
             command += id.id[i];
@@ -448,6 +489,8 @@ function ticketClicked (id) {
 function getAmountOfWaresOrdered (idNumber) {
     let ticketDataFromSessionData = getSessionWareData();
     
+
+
     if (ticketDataFromSessionData != null) {
 
         for (let i = 0; i < ticketDataFromSessionData.length; i++) {
@@ -494,7 +537,20 @@ function calcualteTotalSum () {
 }
 
 function goToConfirmation () {
-    window.location = "movieinfo.html";
+
+
+    console.log("confirm");
+    console.log(canContinueToConfirmation);
+
+
+    if (canContinueToConfirmation){
+        window.location = "confirmation.html";
+    }
+
+    else {
+        alert("Du har ikke valgt nok pladser");
+    }
+    
 }
 
 

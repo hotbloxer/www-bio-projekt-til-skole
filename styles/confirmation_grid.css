@@ -1,0 +1,8 @@
+
+.split_grid {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Filmhistorie, i danmarks klasse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/defaultstyle.css">
+        <link rel="stylesheet" href="styles/buy-tickets.css">
+        <link rel="stylesheet" href="styles/confirmation_grid.css">
+        <link rel="stylesheet" href="styles/sticky-checkout.css">
+
+        <script src="javascript/confirmation.js"></script>
+        <script src="javascript/seat_selection.js"></script>
+
+    </head>
+    <body class = "page-frame ">  
+        <header>
+            <h1 class = header-h1>Filmhistorie i verdensklasse</h1>
+        </header>
+      
+        <main>
+
+            <div class = "split-left-oriented checkout-bottom">
+                <p>biletter</p>
+                <p id = "ticketsBought">antal købt: 0</p>
+                <p id = "totalSum">samlet pris: 0</p>
+                <button onclick="goToConfirmation()">gå videre</button>
+            </div>
+
+            <div>
+                <h1>Du har bestilt følgende:</h1>
+            </div>
+            <div >
+                <div class = "info-wrapper">
+                    <div id = "film-image">
+                        Loading...
+                        
+
+                    </div>
+                    <div>
+                        <h2>Biletter</h2>
+                        <div id = "confirmTickets" class = "split_grid">
+                            <div class = "default-padding-left">
+                                <h3>
+                                    billet navn
+                                </h3>
+                                <p>
+                                    billet type
+                                </p>
+                                <p>
+                                    plads: række 1, sæde 4 
+                                </p>
+                            </div>
+
+
+                            <div class = "default-padding-left">
+                                <h3>
+                                    billet navn
+                                </h3>
+                                <p>
+                                    billet type
+                                </p>
+                                <p>
+                                    plads: række 1, sæde 4 
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <h2>Snacks</h2>
+                        <div id = "confirmSnacks" class = "split_grid">
+   
+
+
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <h3> Filmhistorie i Danmarks klasse</h3>
+            <div class = "footer-grid">
+                <div>om os</div>
+                <div>kontakt</div>
+                <div>søg i film katalog</div>
+
+
+            </div>
+        </footer>
+        <script > 
+            setUpConfirmation();
+            calcualteTotalSum();
+        
+        </script>
+    </body>
+</html>
