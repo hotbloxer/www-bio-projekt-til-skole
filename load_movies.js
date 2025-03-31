@@ -17,7 +17,7 @@ function movieSearchBar(movies) {
     let searchButton = document.createElement('button');
     let resetButton = document.createElement('button');
 
-    searchInput.placeholder = "titel, isntruktør år, medvirkende";
+    searchInput.placeholder = "titel, instruktør år, medvirkende";
     searchButton.textContent = "Søg";
     searchButton.onclick = () => {
         let searchResults = movies.filter(movie => {
