@@ -2,7 +2,7 @@
 loadMovies();
 
 async function loadMovies() {
-    const response = await fetch("data/film_liste.json");
+    const response = await fetch("./data/film_liste.json");
     const obj = await response.json();
     let movies = obj.Movies;
 
