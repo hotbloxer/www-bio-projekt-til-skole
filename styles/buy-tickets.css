@@ -2,7 +2,7 @@
     display: grid;
 
     grid-template-columns: 5fr 1fr 1fr 1fr;
-    background-color: rgb(177, 207, 233);
+    background-color: rgb(113, 132, 149);
     align-items: center;
     padding-left: 2em;
     padding-right: 2em;
@@ -46,7 +46,6 @@
 
 
 .sal-container {
-    background-color: aquamarine;
     width: 100%;
     
 }

@@ -1,6 +1,6 @@
 
 .split_grid {
-    background-color: aqua;
+    background-color: rgb(20, 164, 164);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
