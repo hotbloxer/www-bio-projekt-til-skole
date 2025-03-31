@@ -48,19 +48,27 @@ function fillMovieGrid(movies) {
 function fillMovieContent(movie) {
     let movieContent = document.createElement('div');
     let image = document.createElement('img');
-    let title = document.createElement('div');
+    let title = document.createElement('p');
     let button = document.createElement('button');
+    let ticketImage = document.createElement('img')
     
     movieContent.className = "movie-content";
 
     image.src = movie["Image"];
     image.alt = movie["Original Title"];
+
     image.title = movie["Original Title"];
+    image.className = "movie-list-image";
+
+    ticketImage.src = "images/ticket Icon.png";
+    ticketImage.alt = "køb billet";
+    ticketImage.className = "ticket-icon";
 
     title.textContent = movie["Original Title"];
     
-    button.textContent = "Vælg film";
+    button.textContent = "";
     button.onclick = () => selectMovie(movie);
+    button.appendChild(ticketImage);
 
     movieContent.appendChild(image);
     movieContent.appendChild(title);
@@ -89,7 +97,7 @@ function fillHeroSquare(heroSquare, movie) {
     let bigPic = document.createElement('div');
     let img = document.createElement('img');
     let heroAction = document.createElement('div');
-    let title = document.createElement('h1');
+    let title = document.createElement('h2');
     let button = document.createElement('button');
 
     img.src = movie["Big Image"]; 
@@ -98,8 +106,10 @@ function fillHeroSquare(heroSquare, movie) {
 
     heroAction.className = "hero-action";
     title.textContent = movie["Original Title"];
+    title.className = "scale-font";
 
     button.textContent = "Vælg film";
+    button.className = "hero-button"
     button.onclick = () => selectMovie(movie);
 
     bigPic.appendChild(img);
