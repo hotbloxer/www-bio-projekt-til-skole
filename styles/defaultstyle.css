@@ -115,4 +115,10 @@ a:hover {
         width: 100%;
         margin-top: 1rem;
     }
+
+    .search-bar {
+        display: flex;
+
+    }
+
 }
