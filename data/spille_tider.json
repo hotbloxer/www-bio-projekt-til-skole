@@ -21,7 +21,17 @@
                 {"Hall": "2", "Time": "12:00", "Day": "5", "Month": "4"},
                 {"Hall": "1", "Time": "12:00", "Day": "5", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
-                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"}
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -42,7 +52,19 @@
                 {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
                 {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
-                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"}            
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}          
             ]
         },
         { 
@@ -63,7 +85,19 @@
                 {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
                 {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
-                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"}  
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"} 
             ]
         },
         { 
@@ -76,7 +110,24 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -89,7 +140,24 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -102,7 +170,24 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "3", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "3", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "4", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "4", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "5", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -115,7 +200,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -128,7 +225,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -141,7 +250,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -154,7 +275,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -167,7 +300,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -180,7 +325,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -193,7 +350,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -206,7 +375,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -219,7 +400,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -232,7 +425,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -245,7 +450,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -258,7 +475,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
@@ -271,7 +500,19 @@
                 {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "15:00", "Day": "1", "Month": "4"},
                 {"Hall": "1", "Time": "18:00", "Day": "1", "Month": "4"},
-                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"}
+                {"Hall": "1", "Time": "12:00", "Day": "1", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "6", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "6", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "7", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "7", "Month": "4"},
+                {"Hall": "2", "Time": "18:00", "Day": "8", "Month": "4"},
+                {"Hall": "2", "Time": "12:00", "Day": "8", "Month": "4"},
+                {"Hall": "1", "Time": "12:00", "Day": "9", "Month": "4"},
+                {"Hall": "1", "Time": "15:00", "Day": "9", "Month": "4"},
+                {"Hall": "4", "Time": "18:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "12:00", "Day": "10", "Month": "4"},
+                {"Hall": "4", "Time": "15:00", "Day": "11", "Month": "4"}
             ]
         },
         { 
