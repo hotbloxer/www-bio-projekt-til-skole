@@ -50,6 +50,7 @@ async function getMovieSchedule(selectedMovie) {
             let hall = document.createElement('p');
             let time = document.createElement('p');
             let button = document.createElement('button');
+                
 
             showingBox.className = 'display-date';
             hall.textContent = "Sal " + showing["Hall"];

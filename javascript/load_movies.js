@@ -59,7 +59,7 @@ function fillMovieContent(movie) {
     let image = document.createElement('img');
     let title = document.createElement('p');
     let button = document.createElement('button');
-    let ticketImage = document.createElement('img')
+    let ticketImage = document.createElement('img');
     
     movieContent.className = "movie-content";
 
