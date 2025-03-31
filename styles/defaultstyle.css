@@ -7,20 +7,47 @@
 
 h1 {
     margin-bottom: 0.5rem;
+    color: white;
 }
 
-.page-frame {
+p {
+    color: white;
+    margin: 0.1em;
+}
 
+button {
+    background:  #175dcc;
+    color: white;
+}
+
+h2 {
+    margin: 0.3em;
+}
+
+.page-frame {   
+    margin-top: 0;
+    background-color: #1c273a;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+.theme-blue {
+    background-color:  #175dcc;
+}
+
+.round-corners {
+    border-radius: 10px;
+}
+
 header {
-    background-color: beige;
+    
+    background: #3e567b;
+    margin-top: 0em;
     text-align: center;
 }
 .header-h1 {
-    margin-top: 1%;
+    padding-top: 0.8rem;
+    margin-top: 0;
     margin-bottom: 0%;
 }
 

@@ -231,12 +231,12 @@ function makeTicketsAndSnackDisplay () {
         outputHTMLContainer = outputHolder.httpData;
         outputSessionContainer = outputHolder.sessionData;
         
-        outputHolder = fillTicketsFromDATA (data.snacks)
+        outputHolder = fillSnacksFromData (data.snacks)
         outputHTMLContainer += outputHolder.httpData;
-
+ 
         // dette kode sætter 2 arrays af objeckter sammen. concat virker åbenbart kun med rene string arrays
         Array.prototype.push.apply(outputSessionContainer, outputHolder.sessionData);
-
+ 
         setSessionWareData (outputSessionContainer);
 
         ticketDisplay.innerHTML = outputHTMLContainer;
@@ -261,7 +261,11 @@ function fillTicketsFromDATA (ticketData) {
         let price = (standardPris - (ticketData[i].discount / 100 * standardPris));
         
         // push ticket information til session ticket dataArray
-        let collectInfo = {"kategori":ticketData[i].kategori, "name": ticketData[i].type, "amount": amountOfTickets, "price": price };
+        let collectInfo = {
+            "kategori":ticketData[i].kategori, 
+            "name": ticketData[i].type, 
+            "amount": amountOfTickets, 
+            "price": price };
 
         // saml infromationer om biletter til sessiondata
         ticketSessionData.push(collectInfo);       
@@ -287,13 +291,16 @@ function fillSnacksFromData (snackData) {
         let amountOfSnacks = getAmountOfWaresOrdered(snackData[i].type);
 
         // push ticket information til session ticket dataArray
-        let collectInfo = {"kategori":snackData[i].kategori, "name": snackData[i].type, "amount": amountOfSnacks, "price": snackData[i].pris };
+        let collectInfo = {
+            "kategori":snackData[i].kategori, 
+            "name": snackData[i].type, 
+            "amount": amountOfSnacks, 
+            "price": snackData[i].pris, 
+            "title": snackData[i].title };
 
         // saml infromationer om biletter til sessiondata
         snackSessionData.push(collectInfo);  
 
-        console.log ("amountOfSnacks");
-        console.log (collectInfo);
         snackConstruct += constructSnack(
             snackData[i].title,
             snackData[i].pris,
@@ -302,8 +309,8 @@ function fillSnacksFromData (snackData) {
             amountOfSnacks);
     }
 
-    setSessionWareData(snackSessionData);
-    return snackConstruct;
+    return {"httpData" : snackConstruct, "sessionData": snackSessionData};
+ 
 
 }
 
